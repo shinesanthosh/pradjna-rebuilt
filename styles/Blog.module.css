@@ -1,0 +1,236 @@
+@import url(https://fonts.google.com/specimen/Source+Code+Pro?category=Monospace#standard-styles);
+@import url(https://fonts.google.com/specimen/Lora?category=Serif,Display);
+
+.body {
+  box-sizing: border-box;
+  font-family: 'Source-Pro';
+}
+.top a {
+  float: right;
+  padding: 10px;
+}
+.top {
+  font-family: monospace;
+}
+.logo {
+  height: 42px;
+  width: 42px;
+}
+.ul {
+  float: right;
+  margin-right: 20px;
+  padding-top: 19px;
+  padding-left: 20px 50px;
+}
+
+.ul li {
+  list-style: none;
+  margin: 0 9px;
+  display: inline-block;
+  line-height: 19px;
+  padding-left: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ul li a {
+  text-decoration: none;
+  color: #003260;
+  font-size: 19px;
+}
+.reg {
+  background-color: #003260;
+  color: white;
+  height: 45px;
+  text-decoration: none;
+  padding: 9px 25px;
+  border-radius: 50px;
+}
+.reg a {
+  color: white;
+  margin-top: -10%;
+}
+.topsearch h2 {
+  color: #003260;
+  margin-left: 40%;
+  margin-top: 3%;
+}
+.search {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #003260;
+  padding: 20px;
+  width: 10px;
+}
+.searchbar {
+  margin-left: 20%;
+}
+.cards {
+  background-color: white;
+  width: 275px;
+  height: 350px;
+  margin-left: 15%;
+  box-shadow: 5px 10px 5px 10px whitesmoke;
+  border-radius: 8px;
+}
+.cards1 {
+  background-color: white;
+  width: 275px;
+  height: 350px;
+  margin-left: 40%;
+  margin-top: -23%;
+  box-shadow: 5px 10px 5px 10px whitesmoke;
+  border-radius: 8px;
+}
+.cards2 {
+  background-color: white;
+  width: 275px;
+  height: 350px;
+  margin-left: 65%;
+  margin-top: -23%;
+  box-shadow: 5px 10px 5px 10px whitesmoke;
+  border-radius: 8px;
+}
+
+.image {
+  background-color: lightgrey;
+  width: 260px;
+  height: 150px;
+  margin-top: 3%;
+  margin-left: 2%;
+}
+.cards h3,
+.p {
+  color: #003260;
+  font-family: sans-serif;
+  margin-left: 2%;
+}
+.cards1 h3,
+.p {
+  color: #003260;
+  font-family: sans-serif;
+  margin-left: 2%;
+}
+.cards2 h3,
+.p {
+  color: #003260;
+  font-family: sans-serif;
+  margin-left: 2%;
+}
+.bot {
+  list-style: none;
+  float: left;
+  color: #003260;
+  margin-left: 14%;
+}
+.mid {
+  color: #003260;
+  margin-bottom: 500%;
+  margin-left: 40%;
+}
+.head {
+  font-size: xx-large;
+  margin-left: 2%;
+}
+.lasti {
+  margin-left: 65%;
+  margin-top: -511%;
+  color: #003260;
+}
+.lasti p {
+  margin-left: -1%;
+}
+.gett {
+  font-size: x-large;
+  margin-left: -3px;
+}
+.subi {
+  height: 30px;
+  width: 200px;
+  border-color: #003260;
+}
+
+.aaa {
+  color: #ffffff;
+  background-color: #003260;
+  border: 6px;
+  height: 30px;
+  width: 130px;
+  margin-left: -4px;
+}
+.copyi {
+  margin-top: 80px;
+  margin-left: 42%;
+  color: #003260;
+  font-size: larger;
+}
+.Com ul li {
+  list-style: none;
+}
+.botul ul li {
+  list-style: none;
+}
+.cards button {
+  border: none;
+  background-color: #003260;
+  outline: none;
+  color: white;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: -18%;
+  margin-left: 2%;
+  cursor: pointer;
+}
+.cards1 button {
+  border: none;
+  background-color: #003260;
+  outline: none;
+  color: white;
+  border-radius: 8px;
+  padding: 8px;
+  margin-left: 2%;
+  cursor: pointer;
+}
+.cards2 button {
+  border: none;
+  background-color: #003260;
+  outline: none;
+  color: white;
+  border-radius: 8px;
+  padding: 8px;
+  margin-left: 2%;
+  cursor: pointer;
+}
+.kk {
+  border: none;
+  margin-left: 20%;
+  outline: none;
+  width: 50%;
+  height: 10%;
+  margin-top: -150%;
+  padding: 20px 20px;
+  color: #003260;
+  font: #003260;
+}
+
+.twit {
+  margin-left: 2%;
+}
+.insta {
+  margin-left: 2%;
+}
+.mm {
+  background-color: #003260;
+  color: rgb(255, 255, 255);
+  clear: both;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.gg {
+  color: #003260;
+  margin-left: 6%;
+  margin-bottom: -2.1%;
+  font-size: 50px;
+  font-family: serif;
+  margin-left: 23%;
+}

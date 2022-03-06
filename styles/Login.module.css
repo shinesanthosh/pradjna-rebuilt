@@ -1,0 +1,175 @@
+
+
+.wrapper{
+    background: url(/bg.jpeg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo{
+    width: 67*134;
+    height: 67px;
+    padding: 20px 100px;
+}
+
+.wrapper ul{
+     
+    float: right;
+    margin-right: 20px;
+    padding-top: 19px;
+    padding-left: 20px 50px;
+}
+
+.wrapper ul li{
+   list-style: none;
+   margin: 0 9px;
+   display: inline-block;
+   line-height: 19px;
+   padding-left: 20px;
+ 
+   
+}
+
+.wrapper ul li a{
+ text-decoration: none;
+ color: #FF775E;
+ font-size: 19px;
+}
+
+
+.wrapper .center{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    font-size: 15px;
+    color: #FF775E;
+    font-family: serif;
+
+}
+.god {
+
+font-family: 'Times New Roman', Times, serif;
+font-size: 25px;
+    width: 1000px;
+    margin: left;
+    height: 30;
+    color: #FF775E;
+    padding: 70px 100px;}
+
+.godx  {
+
+    width: 698px;
+    margin: left;
+    height: 134;
+    color: #FF775E;
+    padding: 70px 100px;
+    font-size: xx-large;
+    font-size: 76px;
+    letter-spacing: 2ps;
+    line-height: 5ps;
+}
+
+
+.login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin-top: -15%;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: #FF775E;  
+        border-radius: 12px ;  
+        margin-left: 65%;
+          
+}  
+  
+.label{  
+    color:#003260;  
+    font-size: 17px;  
+}  
+.Uname{  
+    width: 300px;  
+    height: 30px;  
+    border-color: #003260;  
+    border-radius: 8px;  
+    padding-left: 8px; 
+    background-color: #FF775E; 
+    
+}  
+.Pass{  
+    width: 300px;  
+    height: 30px;  
+    border-color:#003260;  
+    border-radius: 8px;  
+    padding-left: 8px; 
+    background-color: #FF775E; 
+      
+}  
+.log{  
+    width: 100px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 8px;  
+    padding-left: 7px;  
+    color: #FF775E;  
+    background-color:#003260;
+    cursor: pointer;
+
+  
+  
+}  
+.forgot{
+    color: #003260;
+    margin-left: 45%;
+    margin-top: -20%;
+}  
+  
+.a{  
+    float: right;  
+    
+    
+}
+.dont{
+    margin-left: -50%;
+    color:hsl(9, 100%, 68%);
+    
+}
+.link{
+    text-decoration: none;
+}
+.copy{
+    
+    color: #FF775E;
+    margin-left: 5%;
+}
+.motta{
+    margin-left: 25%;
+    margin-top:-20%;
+    width: 20px;
+    margin-bottom: 0.7%;
+}
+.motta1{
+    margin-left: 1%;
+    margin-top:-20%;
+    width: 20px; 
+    margin-bottom: 0.7%;
+}
+.motta2{
+    margin-left: 1%;
+    margin-top:-20%;
+    width: 20px;
+    margin-bottom: 0.7%;
+}
+.btnji{
+    background-color: #FF775E;
+    color: #003260;
+    text-decoration: none;
+    padding: 9px 25px;
+    border-radius: 50px;
+    cursor:pointer;
+}
+.forgot{
+    text-decoration:none;
+    margin-top:-10%;
+    margin-left:-20%;
+}
+

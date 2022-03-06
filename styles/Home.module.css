@@ -1,0 +1,147 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  max-width: 100vw;
+}
+
+.heroContainer {
+  background: #003260;
+  padding: 0;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleContent {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.heroContainer > p {
+  position: absolute;
+  top: 12vh;
+  color: #ff775e;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.wavesbg {
+  width: 50vw;
+  position: absolute;
+  top: 35vh;
+  bottom: 40vh;
+  /* margin: 20vw ; */
+}
+
+.sliderImg {
+  position: absolute;
+  top: 30vh;
+  bottom: 40vh;
+  left: 40vw;
+  width: 15vw;
+}
+
+.titleDescGrp {
+  position: absolute;
+  top: 65vh;
+  text-align: center;
+  width: 100%;
+}
+
+.titleDescGrp > h4 {
+  color: #fff;
+  letter-spacing: 0.4vw;
+}
+
+.titleDescGrp > h1 {
+  color: #ff775e;
+  /* letter-spacing: 0.9vw; */
+  font-size: 4vw;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.titleDescGrp > button {
+  margin: 2em 2vw;
+  padding: 1vh 2.2vw;
+  border: solid 1px #ff775e;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: 'Lucida Sans Typewriter';
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+}
+
+.regbtn {
+  background: transparent;
+  color: #ff775e;
+}
+
+.regbtn:hover {
+  background: #ff775e;
+  color: #003260;
+}
+
+.bookbtn {
+  background: #ff775e;
+  color: #003260;
+}
+
+.bookbtn:hover {
+  background: transparent;
+  color: #ff775e;
+}
+
+@media screen and (max-width: 780px) {
+  .titleDescGrp > button {
+    border-radius: 20px;
+    padding: 1vh 5vw;
+    display: block;
+    position: relative;
+    width: 50%;
+    left: 25%;
+  }
+  .bookbtn {
+    color: #003260;
+  }
+
+  .heroContainer > p {
+    font-size: 5vw;
+    letter-spacing: 2vw;
+  }
+  .heroContainer {
+    overflow: hidden;
+  }
+  .wavesbg {
+    width: 150vw;
+  }
+
+  .sliderImg {
+    width: 30vw;
+    left: 35vw;
+    top: 35vh;
+  }
+
+  .titleDescGrp {
+    top: 55vh;
+  }
+
+  .titleDescGrp > h1 {
+    font-size: 8vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}

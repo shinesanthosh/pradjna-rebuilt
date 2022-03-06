@@ -1,0 +1,189 @@
+
+
+
+.logo{
+    width: 67*134;
+    height: 67px;
+    padding: 20px 100px;
+}
+.wrapper ul{
+     
+    float: right;
+    margin-right: 20px;
+    padding-top: 19px;
+    padding-left: 20px 50px;
+    font-size: 19px;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper ul li{
+   list-style: none;
+   margin: 0 9px;
+   display: inline-block;
+   line-height: 19px;
+   padding-left: 20px;
+   font-size: 19px;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+   
+}
+
+.wrapper ul li a{
+ text-decoration: none;
+ color: #003260;
+ font-size: 19px;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.wrapper .center{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    font-size: 15px;
+    color: #003260;
+    font-size: 19px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+}
+.btn-ji{
+    background-color: #003260;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 7px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn{
+    width: 92%;
+    margin-left: 6%;
+    height: 100px;
+    border-radius: 10px;
+    border-color: #003260;
+    background-color: rgb(255, 255, 255);
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+ .h11{
+        border:5px solid #003260; 
+        border-width:3px; 
+        height: 110px;
+        width: 90%;
+        margin-left: 6%;
+        border-radius: 20px;
+    color: #003260;
+    font-size: 200%;
+    font-size: xx-large;
+
+    
+    
+    }
+    .h77{
+        margin-left: 800px;
+        background-color: #003260;
+        color: #ffffff;
+        width: 12%;
+        height: 50%;
+        border-color: #003260;
+        border-radius: 10px;
+        margin-top: -25%;
+        padding: 20px;
+        align-items: center;
+        
+
+        
+    }
+    .h88{
+        margin-left: 30px;
+        border-color: #003260;
+        color: #003260;
+        background-color: #ffffff;
+        width: 12%;
+        height: 50%;
+        border-radius: 10px;
+        margin-top: -30%;
+        padding: -20px;
+        margin-bottom: 40px;
+
+        
+        
+
+    }
+    .h99{
+        font-size: larger;
+        color: #003260;
+        margin-left: 7%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+.h98{
+    color: #003260;
+    font-size: 400%;
+    margin-left: 7%;
+}
+.dog{
+    margin-left: 6%;
+}
+.ace{
+    margin-top: -12%;
+    color: #003260;
+    margin-left: 40%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.ggg{
+    margin-left: 7%;
+    color: #003260;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 26px;
+}
+.hhh{
+    margin-left: 7%;
+    color: #003260;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 26px;
+
+}
+.bot{
+    float: left;
+    color: #003260;
+    margin-left: 7%;
+}
+.mid{
+    color: #003260;
+    margin-bottom: 500%;
+    margin-left:35%;
+}
+.head{
+    font-size: xx-large;
+}
+.lasti{
+    margin-left: 65%;
+    margin-top: -511%;
+    color: #003260;
+    
+}
+.gett{
+    font-size: x-large;
+}
+.subi{
+    height: 40px;
+    width:200px ;
+    border-color: #003260;
+}
+
+.aaa{
+    color: #ffffff;
+        background-color: #003260;
+        border:6px;
+        height: 40px;
+        width: 130px;
+        margin-left: -4px;
+    
+}
+.copyi{
+    margin-top: 120px;
+    margin-left: 42%;
+    color: #003260;
+    font-size: larger;
+}

@@ -1,0 +1,364 @@
+.logo {
+  width: 67 * 134;
+  height: 67px;
+  padding: 20px 100px;
+}
+.wrapper ul {
+  float: right;
+  margin-right: 20px;
+  padding-top: 19px;
+  padding-left: 20px 50px;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper ul li {
+  list-style: none;
+  margin: 0 9px;
+  display: inline-block;
+  line-height: 19px;
+  padding-left: 20px;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper ul li a {
+  text-decoration: none;
+  color: #003260;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper .center {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  font-size: 15px;
+  color: #003260;
+  font-size: 19px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btnji {
+  background-color: #003260;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn {
+  width: 92%;
+  margin-left: 6%;
+  height: 100px;
+  border-radius: 10px;
+  border-color: #003260;
+  background-color: rgb(255, 255, 255);
+  font-size: xx-large;
+  font-family: 'Times New Roman', Times, serif;
+}
+.ttt {
+  height: -30%;
+  width: 55%;
+  margin-left: 7%;
+}
+.slider {
+  overflow: hidden;
+}
+.slider figure {
+  position: relative;
+  width: 200%;
+  height: 50%;
+  margin: 0;
+  left: 0;
+  animation: 10s sliders infinite;
+}
+.slider figure img {
+  width: 20%;
+  float: left;
+}
+@keyframes sliders {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -50%;
+  }
+  50% {
+    left: -100%;
+  }
+  70% {
+    left: -50%;
+  }
+  75% {
+    right: 100%;
+  }
+  95% {
+    right: 50%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+.ggy {
+  font-size: 50px;
+  color: #003260;
+  margin-left: 45%;
+}
+.bbi {
+  font-size: 30px;
+  color: #003260;
+  margin-left: 12%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hjk {
+  font-size: 40px;
+  margin-left: 7%;
+  color: #003260;
+}
+.mmm {
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 7%;
+  color: #003260;
+}
+.im {
+  margin-left: 43%;
+  margin-top: -100%;
+  margin-bottom: 0%;
+  width: 30px;
+}
+.nnn {
+  font-size: 40px;
+  margin-left: 7%;
+  color: #003260;
+}
+.kkk {
+  border-bottom: 2px solid #003260;
+  padding: 7px 0;
+  width: 70rem;
+  margin-left: 7%;
+}
+.zzz {
+  border-bottom: 2px solid #003260;
+  padding: 7px 0;
+  width: 70rem;
+  margin-left: 7%;
+}
+.jjj {
+  font-size: 40px;
+  margin-left: 7%;
+  color: #003260;
+}
+.bbb {
+  margin-left: 55%;
+  margin-top: -50%;
+  margin-bottom: 0%;
+  width: 30px;
+}
+.qaq {
+  margin-left: 40%;
+  margin-top: -50%;
+  margin-bottom: 0%;
+  width: 30px;
+}
+.zzq {
+  border-bottom: 2px solid #003260;
+  padding: 7px 0;
+  width: 70rem;
+  margin-left: 7%;
+}
+.jjq {
+  font-size: 40px;
+  margin-left: 7%;
+  color: #003260;
+}
+.qag {
+  margin-left: 29%;
+  margin-top: -50%;
+  margin-bottom: 0%;
+  width: 30px;
+}
+.zz1 {
+  border-bottom: 2px solid #003260;
+  padding: 7px 0;
+  width: 70rem;
+  margin-left: 7%;
+}
+.cc {
+  font-size: 50px;
+  color: #003260;
+  margin-left: 7%;
+}
+.abc {
+  width: 100 * 200px;
+  height: 500px;
+  padding: 20px 40px;
+  padding: 10;
+}
+.abe {
+  width: 100 * 200px;
+  height: 500px;
+  padding: 20px 40px;
+  padding: 10;
+}
+.abv {
+  width: 100 * 200px;
+  height: 500px;
+  padding: 20px 40px;
+  padding: 10;
+}
+.abm {
+  width: 100 * 200px;
+  height: 500px;
+  padding: 20px 40px;
+  padding: 10;
+}
+.ffw {
+  font-size: 50px;
+  color: #003260;
+  margin-left: 8%;
+}
+.label {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+.input,
+.label {
+  margin: opx 0;
+  margin-left: 8%;
+  width: 25%;
+  height: 40px;
+  border-radius: 8px;
+  border-color: #003260;
+  margin-top: -1%;
+  border-width: 2px;
+}
+.ss {
+  font-size: x-large;
+  color: #003260;
+}
+.sss {
+  height: 100px;
+}
+.ssg {
+  margin-bottom: 0.4%;
+  font-size: x-large;
+  color: #003260;
+}
+.input[type='submit'] {
+  background-color: #003260;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 8%;
+  border-radius: 10px;
+}
+
+.input[type='submit']:hover {
+  background-color: #003260;
+}
+.ere {
+  margin-left: 53%;
+  color: #003260;
+  font-size: 50px;
+  margin-top: -27%;
+}
+.fzz {
+  margin-left: 53%;
+  color: #003260;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.jem {
+  margin-left: 53%;
+  color: #003260;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.jei {
+  margin-left: 53%;
+  color: #003260;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contactmap {
+  margin-left: 53%;
+}
+.lstimg {
+  width: 100%;
+}
+.bot {
+  color: #003260;
+  margin-left: 7%;
+  list-style-type: none;
+}
+.com {
+  color: #003260;
+  margin-left: 20%;
+  list-style-type: none;
+  margin-top: -14%;
+}
+.mid {
+  color: #003260;
+  margin-bottom: 400%;
+  margin-left: 40%;
+  margin-top: -16.6%;
+}
+
+.gett {
+  font-size: x-large;
+}
+.subi {
+  margin-left: 0%;
+  width: 200px;
+  border-color: #003260;
+}
+
+.lasti {
+  margin-left: 70%;
+  margin-top: -411%;
+  color: #003260;
+}
+
+.aaa {
+  color: #ffffff;
+  background-color: #003260;
+  border: 6px;
+  height: 40px;
+  width: 130px;
+  margin-left: -8px;
+}
+.copyi {
+  margin-top: 110px;
+  margin-left: 42%;
+  color: #003260;
+  font-size: larger;
+}
+
+
+.team{
+  
+  display: inline;
+  margin: 10;
+  padding: 10px
+}
+
+.member {
+  background: #ff775e;
+  margin: 10px;
+  border-radius: 10px;
+  max-width: 400px;
+  color:#003260;
+}

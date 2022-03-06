@@ -1,0 +1,240 @@
+
+
+
+
+.logo{
+    width: 67*134;
+    height: 67px;
+    padding: 20px 100px;
+}
+
+.wrapper ul{
+     
+    float: right;
+    margin-right: 20px;
+    padding-top: 19px;
+    padding-left: 20px 50px;
+    font-size: 19px;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper ul li{
+   list-style: none;
+   margin: 0 9px;
+   display: inline-block;
+   line-height: 19px;
+   padding-left: 20px;
+   font-size: 19px;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+   
+}
+
+.wrapper ul li a{
+ text-decoration: none;
+ color: #003260;
+ font-size: 19px;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.wrapper .center{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    font-size: 15px;
+    color: #003260;
+    font-size: 19px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+}
+.btn-ji{
+    background-color: #003260;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 7px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.ab{
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 390%;
+    color: #003260;
+    margin-left: 28%;
+    
+}
+.para{
+    margin-left:15% ;
+    font-size: 160%;
+    color: #003260;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.blue{
+    margin-left:18% ;
+    height:400px ;
+
+}
+.ace{
+    color: rgb(255, 253, 253);
+    margin-left: 40%;
+    margin-top: -12%;
+    font-size: 160%;
+
+
+}
+.fe{
+    font-size: 390%;
+    color: #003260;
+    
+}
+.list{
+    
+    width: 67*134;
+    height: 30px;
+    padding: 1px 320px;
+   
+}
+.line{
+    margin-left: 22%;
+    font-size: 25px;
+    color: #003260;
+    margin-top: -35px;
+}
+.list1{
+    width: 67*134;
+    height: 30px;
+   padding: 16px;
+    margin-left: 800px;
+    margin-top: -530%;
+    
+}
+.line2{
+    margin-left: 51%;
+    font-size: 25px;
+    color: #003260;
+    margin-top: -50px;}
+.screen {
+    margin-left:15% ;
+    font-size: 160%;
+    color: #003260;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+}
+.grp{
+    margin-left: 16%;
+    margin-top: -35%;
+
+}
+.border{
+    margin-top: 5%;
+    margin-left: 15%;
+}
+.longpara{
+    margin-left:15% ;
+    font-size: 160%;
+    color: #003260;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+}
+.verylong{
+    margin-left:15% ;
+    font-size: 160%;
+    color: #003260;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.jemi{
+    margin-left:15% ;
+    font-size: 160%;
+    color: #003260;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.sub{
+    margin-left:15% ;
+    font-size: 220%;
+    
+    color: #003260;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-optical-sizing: 20px;
+}
+.vtl3{
+    font-size: xx-large;
+    padding: -10px 70px;
+    margin-top: -50vmax;
+    height: 150px;
+    width: 22%;
+    border-radius: 30px;
+    margin-left: 2%;
+    margin-top: 2%;
+    border-color: #003260;
+    background-color: rgb(254, 255, 255);
+    color: #003260;
+    
+    
+    
+   
+}
+.vtl4{
+    font-size: xx-large;
+    padding: -10px 100px;
+    margin-top: -10vmax;
+    height: 150px;
+    width: 22%;
+    border-radius: 20px;
+    margin-left: 1%;
+    margin-right: -30;
+    margin-top: 2%;
+    border-color: #003260;
+    background-color: rgb(254, 255, 255);
+    color: #003260;
+}
+.learn{
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: #003260;
+    margin-bottom: 50px;
+}
+.bot{
+    float: left;
+    color: #003260;
+    margin-left: 14%;
+}
+.mid{
+    color: #003260;
+    margin-bottom: 500%;
+    margin-left: 40%;
+}
+.head{
+    font-size: xx-large;
+}
+.lasti{
+    margin-left: 65%;
+    margin-top: -511%;
+    color: #003260;
+    
+}
+.gett{
+    font-size: x-large;
+}
+.subi{
+    height: 39px;
+    width:200px ;
+    border-color: #003260;
+}
+
+.aaa{
+    color: #ffffff;
+        background-color: #003260;
+        border:6px;
+        height: 40px;
+        width: 130px;
+        margin-left: -4px;
+    
+}
+.copyi{
+    margin-top: 130px;
+    margin-left: 42%;
+    color: #003260;
+    font-size: larger;
+}
