@@ -3,7 +3,9 @@ import { Html, Head, Main, NextScript, Script } from 'next/document'
 export default function Document() {
     return (
       <Html>
-        <Head />
+        <Head>
+          <link rel='icon' href='/logo.png' />
+        </Head>
         <body>
           <Main />
           <NextScript />

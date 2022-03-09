@@ -40,11 +40,7 @@ export default function Home({ clients, partners, testimonials, titleSlider }) {
           <Menu />
 
           <div className={styles.titleContent}>
-            <img
-              src='/waves-bg.png'
-              alt=''
-              className={styles.wavesbg}
-            />
+            <img src='/waves-bg.png' alt='' className={styles.wavesbg} />
 
             {titleSlider.map((slide, key) => (
               <div key={key}>
@@ -68,100 +64,83 @@ export default function Home({ clients, partners, testimonials, titleSlider }) {
         </div>
 
         <div className={styles.employee}>
-          <img src='/Image 2.png' className={styles.jemind} />
-          <h4 className={styles.emp}>
-            Employee Productivity,
-            <br /> Safety,Motivation
+          <img src='/employee_ex.png' className={styles.empimg} />
+
+          <h4 className={styles.emptitle}>
+            Employee Productivity, Safety,Motivation
           </h4>
-          <br />{' '}
-          <p2>
-            Human evaluations have limitations of subjectivity,bias
-            <br />
-            and unpredictable outcomes.Pradjna platform offers
-            <br />
-            data driven,objective,unbiased assessments of your
-            <br />
-            skilled resources.Employees are evaluated are correlated with
-            <br />
-            better motivation,productivity,work place safety,
-            <br />
-            reduced material wastage
-          </p2>
-          <br /> <br /> <br />{' '}
-          <button className={styles.booka}>BOOK A CALL</button>
-          <br />
-          <br /> <br />
-          <h5 className={styles.cli}>OUR CLIENTS</h5>
-          <div className={styles.cm}>
-            <br />
+          <p className={styles.empdesc}>
+            Human evaluations have limitations of subjectivity,bias and
+            unpredictable outcomes.Pradjna platform offers data
+            driven,objective,unbiased assessments of your skilled
+            resources.Employees are evaluated are correlated with better
+            motivation,productivity,work place safety, reduced material wastage
+          </p>
+
+          <button className={styles.bookcallbtn}>BOOK A CALL</button>
+        </div>
+
+        <div className={styles.clients}>
+          <h5 className={styles.cltitle}>OUR CLIENTS</h5>
+          <div className={styles.climgContainer}>
             {clients.map((client, key) => (
-              <img src={client.asset.url} className={styles.img4} key={key} />
+              <img src={client.asset.url} className={styles.climg} key={key} />
             ))}
           </div>
         </div>
+
         <div className={styles.platform}>
-          <h5 className={styles.plat}>
-            {' '}
-            One Platform,Many <br />
-            Applications
-          </h5>
-          <br />{' '}
-          <p3>
-            a unique platform With multiple applications across the Blue <br />{' '}
-            &#8200; &#8200; &#8200; &#8200; &#8200; &#8200; &#8200; &#8200;
-            &#8200; &#8200; Collar segment
-          </p3>
-        </div>
+          <h5 className={styles.platitle}>One Platform,Many Applications</h5>
 
-        <img src='/Image 3.png' className={styles.img8} />
+          <p className={styles.pladesc}>
+            a unique platform With multiple applications across the Blue Collar
+            segment
+          </p>
 
-        <div className='age'>
-          <img src='/Image 1.png' className={styles.img9} />
-          <img src='/Ellipse 2.png' className={styles.img10} />
-          <img src='/Ellipse 2.png' className={styles.img10} />
-          <img src='/Ellipse 2.png' className={styles.img10} />
-          <img src='/Ellipse 2.png' className={styles.img10} />
-          <img src='/insurance (1).png' className={styles.img11} />
-          <img src='/taxi.png' className={styles.img12} />
-          <img src='/select.png' className={styles.img12} />{' '}
-          <img src='/engineering.png' className={styles.img12} />
-        </div>
-        <div className={styles.achachan}>
-          <h6 className={styles.h6}>User Based &#8200; Insurance</h6>
-          <h6 className={styles.myachu}> Mobility</h6>
-          <h6 className={styles.maachu}>
-            Enterprise Resources
-            <br />
-            &#8200;&#8200; Management
-          </h6>
-          <h6 className={styles.maaachu}>
-            {' '}
-            &#8200;&#8200;&#8200;&#8200;&#8200;&#8200;Skill <br />
-            Development
-          </h6>
-        </div>
+          <img
+            src='/driver.png'
+            className={`${styles.platitleimg} ${styles.platitleimga}`}
+          />
+          <img
+            src='/welding.png'
+            className={`${styles.platitleimg} ${styles.platitleimgb}`}
+          />
 
-        <div className={styles.dem}>
-          <button className={styles.SEE}>SEE DEMO</button>
-          <button className={styles.regi}>REGISTER</button>
+          <div className={styles.plaimgset}>
+            <img src='/orange_sphere.png' className={styles.plaimg} />
+            <img src='/orange_sphere.png' className={styles.plaimg} />
+            <img src='/orange_sphere.png' className={styles.plaimg} />
+            <img src='/orange_sphere.png' className={styles.plaimg} />
+            <img src='/insurance.png' className={styles.plaimg} />
+            <img src='/taxi.png' className={styles.plaimg} />
+            <img src='/select.png' className={styles.plaimg} />
+            <img src='/engineering.png' className={styles.plaimg} />
+          </div>
+          <div className={styles.plaimgcaptions}>
+            <h6 className={styles.plaimgcaption}>User Based Insurance</h6>
+            <h6 className={styles.plaimgcaption}> Mobility</h6>
+            <h6 className={styles.plaimgcaption}>
+              Enterprise Resources Management
+            </h6>
+            <h6 className={styles.plaimgcaption}>Skill Development</h6>
+          </div>
+
+          <div className={styles.plabtns}>
+            <button className={styles.plaseedemo}>SEE DEMO</button>
+            <button className={styles.plareg}>REGISTER</button>
+          </div>
         </div>
 
         <div>
           <h3 className={styles.txt}>WHAT MAKE US UNIQUE</h3>
           <h3 className={styles.txta}>
-            We&apos;re international award
-            <br />
-            &#8200;&#8200;&#8200;&#8200;&#8200;winning platform
+            We&apos;re international award winning platform
           </h3>
         </div>
 
-        <br />
-        <br />
         <p4>
-          &#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;Our
-          assessment model is globally unique and cutting edge. We use sensor
-          fusion - Apps, IoTs, Standard
-          <br />
+          Our assessment model is globally unique and cutting edge. We use
+          sensor fusion - Apps, IoTs, Standard
           &#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;Hardware
           Interfaces to collect workplace data. Pradjna uses revolutionary
           Artificial General Intelligence
