@@ -12,8 +12,8 @@ export const getStaticProps = async () => {
   let clients, partners, testimonials, titleSlider
 
   await fetch(url + '?query=' + encodeURIComponent(clientQuery))
-    .then((res) => res.json())
-    .then((data) => {
+    .then(res => res.json())
+    .then(data => {
       clients = data.result[0].client
       partners = data.result[0].partner
       testimonials = data.result[0].testimonials
@@ -23,7 +23,7 @@ export const getStaticProps = async () => {
   return { props: { clients, partners, testimonials, titleSlider } }
 }
 
-const formatName = (str) => {
+const formatName = str => {
   str = str.toLowerCase()
   str = str.replace(str.charAt(0), str.charAt(0).toUpperCase())
   return str
@@ -40,13 +40,13 @@ export default function Home({ clients, partners, testimonials, titleSlider }) {
           <Menu />
 
           <div className={styles.titleContent}>
-            <img src='/waves-bg.png' alt='' className={styles.wavesbg} />
+            <img src="/waves-bg.png" alt="" className={styles.wavesbg} />
 
             {titleSlider.map((slide, key) => (
               <div key={key}>
                 <img
                   src={slide.asset.url}
-                  alt=''
+                  alt=""
                   className={styles.sliderImg}
                 />
               </div>
@@ -64,7 +64,7 @@ export default function Home({ clients, partners, testimonials, titleSlider }) {
         </div>
 
         <div className={styles.employee}>
-          <img src='/employee_ex.png' className={styles.empimg} />
+          <img src="/employee_ex.png" className={styles.empimg} />
 
           <h4 className={styles.emptitle}>
             Employee Productivity, Safety,Motivation
@@ -98,32 +98,61 @@ export default function Home({ clients, partners, testimonials, titleSlider }) {
           </p>
 
           <img
-            src='/driver.png'
+            src="/driver.png"
             className={`${styles.platitleimg} ${styles.platitleimga}`}
           />
           <img
-            src='/welding.png'
+            src="/welding.png"
             className={`${styles.platitleimg} ${styles.platitleimgb}`}
           />
 
-          <div className={styles.plaimgset}>
-            <img src='/orange_sphere.png' className={styles.plaimg} />
-            <img src='/orange_sphere.png' className={styles.plaimg} />
-            <img src='/orange_sphere.png' className={styles.plaimg} />
-            <img src='/orange_sphere.png' className={styles.plaimg} />
-            <img src='/insurance.png' className={styles.plaimg} />
-            <img src='/taxi.png' className={styles.plaimg} />
-            <img src='/select.png' className={styles.plaimg} />
-            <img src='/engineering.png' className={styles.plaimg} />
-          </div>
-          <div className={styles.plaimgcaptions}>
-            <h6 className={styles.plaimgcaption}>User Based Insurance</h6>
-            <h6 className={styles.plaimgcaption}> Mobility</h6>
-            <h6 className={styles.plaimgcaption}>
-              Enterprise Resources Management
-            </h6>
-            <h6 className={styles.plaimgcaption}>Skill Development</h6>
-          </div>
+          <img
+            src="/orange_sphere.png"
+            className={`${styles.plabgsphere} ${styles.plaimgset1} ${styles.plaimg}`}
+          />
+          <img
+            src="/insurance.png"
+            className={`${styles.plaimgset1} ${styles.plaimg}`}
+          />
+          <img
+            src="/orange_sphere.png"
+            className={`${styles.plabgsphere} ${styles.plaimgset2} ${styles.plaimg}`}
+          />
+          <img
+            src="/orange_sphere.png"
+            className={`${styles.plabgsphere} ${styles.plaimgset3} ${styles.plaimg}`}
+          />
+          <img
+            src="/orange_sphere.png"
+            className={`${styles.plabgsphere} ${styles.plaimgset4} ${styles.plaimg}`}
+          />
+
+          <img
+            src="/taxi.png"
+            className={`${styles.plaimgset2} ${styles.plaimg}`}
+          />
+          <img
+            src="/select.png"
+            className={`${styles.plaimgset3} ${styles.plaimg}`}
+          />
+          <img
+            src="/engineering.png"
+            className={`${styles.plaimgset4} ${styles.plaimg}`}
+          />
+
+          <h6 className={`${styles.plaimgcaption1} ${styles.plaimgcaption}`}>
+            User Based Insurance
+          </h6>
+          <h6 className={`${styles.plaimgcaption2} ${styles.plaimgcaption}`}>
+            {' '}
+            Mobility
+          </h6>
+          <h6 className={`${styles.plaimgcaption3} ${styles.plaimgcaption}`}>
+            Enterprise Resources Management
+          </h6>
+          <h6 className={`${styles.plaimgcaption4} ${styles.plaimgcaption}`}>
+            Skill Development
+          </h6>
 
           <div className={styles.plabtns}>
             <button className={styles.plaseedemo}>SEE DEMO</button>
@@ -151,20 +180,20 @@ export default function Home({ clients, partners, testimonials, titleSlider }) {
         </p4>
 
         <div className={styles.era}>
-          <img src='Ellipse 2.png' className={styles.img101} />
-          <img src='Ellipse 2.png' className={styles.img101} />{' '}
-          <img src='Ellipse 2.png' className={styles.img101} />{' '}
-          <img src='Ellipse 2.png' className={styles.img101} />{' '}
-          <img src='Ellipse 2.png' className={styles.img101} />
-          <div className='kuu'>
-            <img src='aim.png' className={styles.img111} />{' '}
-            <img src='value.png' className={styles.img111} />{' '}
-            <img src='open-24-hours.png' className={styles.img111} />{' '}
-            <img src='data-driven.png' className={styles.img111} />{' '}
-            <img src='scalability.png' className={styles.img111} />
+          <img src="Ellipse 2.png" className={styles.img101} />
+          <img src="Ellipse 2.png" className={styles.img101} />{' '}
+          <img src="Ellipse 2.png" className={styles.img101} />{' '}
+          <img src="Ellipse 2.png" className={styles.img101} />{' '}
+          <img src="Ellipse 2.png" className={styles.img101} />
+          <div className="kuu">
+            <img src="aim.png" className={styles.img111} />{' '}
+            <img src="value.png" className={styles.img111} />{' '}
+            <img src="open-24-hours.png" className={styles.img111} />{' '}
+            <img src="data-driven.png" className={styles.img111} />{' '}
+            <img src="scalability.png" className={styles.img111} />
           </div>
-          <div className='hello'>
-            <h7 className='h7'>
+          <div className="hello">
+            <h7 className="h7">
               <br />
               &#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;Objective
               And
@@ -240,7 +269,8 @@ export default function Home({ clients, partners, testimonials, titleSlider }) {
                 onClick={() => {
                   setIsPlaying(!isPlaying)
                   setIsMuted(false)
-                }}>
+                }}
+              >
                 <ReactPlayer
                   url={testimonial.testimonialVideo.asset.url}
                   width={320}
@@ -280,23 +310,23 @@ export default function Home({ clients, partners, testimonials, titleSlider }) {
             <br />
             <br />
             <li>
-              <a href='#'>About Us</a>
+              <a href="#">About Us</a>
             </li>
             <br />
             <li>
-              <a href='#'>Contact Us</a>
+              <a href="#">Contact Us</a>
             </li>
             <br />
             <li>
-              <a href='#'>Journal</a>
+              <a href="#">Journal</a>
             </li>
             <br />
             <li>
-              <a href='#'>Register</a>
+              <a href="#">Register</a>
             </li>
             <br />
             <li>
-              <a href='#'>Login</a>
+              <a href="#">Login</a>
             </li>
             <br />
           </ul>
@@ -314,9 +344,9 @@ export default function Home({ clients, partners, testimonials, titleSlider }) {
             Machine Learning.
           </p9>
           <br />
-          <img src='Ellipse 26.png' className={styles.imej} width='20px' />
-          <img src='Ellipse 25.png' className={styles.imej} width='20px' />
-          <img src='Ellipse 27.png' className={styles.imej} width='20px' />
+          <img src="Ellipse 26.png" className={styles.imej} width="20px" />
+          <img src="Ellipse 25.png" className={styles.imej} width="20px" />
+          <img src="Ellipse 27.png" className={styles.imej} width="20px" />
           <br />
         </div>
         <div className={styles.lasti}>
@@ -325,8 +355,8 @@ export default function Home({ clients, partners, testimonials, titleSlider }) {
           <p10>Learn about growing your business.</p10>
           <br />
           <div className={styles.subii}>
-            <input className={styles.subi} type='search' id='quary' />
-            <button className={styles.aaa} value='submit'>
+            <input className={styles.subi} type="search" id="quary" />
+            <button className={styles.aaa} value="submit">
               SUBSCRIBE
             </button>
           </div>

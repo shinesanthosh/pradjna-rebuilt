@@ -212,27 +212,42 @@
 
 .platform {
   display: grid;
-  grid-template-columns: repeat(3, 1fr) repeat(3,0.5fr) 1.5fr ;
-  grid-template-rows: repeat(2, 1fr) 0.5fr 1.5fr 0.25fr 0.5fr;
+  grid-template-columns: repeat(3, 1fr) repeat(3, 0.5fr) 1.5fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.25fr 0.5fr;
   grid-template-areas:
     'e1 e1 e1 e1 im1 im1 e2'
     'tl tl tl e3 im1 im1 im2'
     'ds ds ds ds im1 im1 im2'
-    'ic ic ic ic ic e4 im2'
-    'ca ca ca ca ca e4 e5'
+    'ic1 ic2 ic3 ic4 ic4 e4 im2'
+    'ca1 ca2 ca3 ca4 ca4 e4 e5'
     'bt bt bt bt bt bt bt';
+  align-items: center;
+  justify-items: center;
 }
 
 .platitle {
   grid-area: tl;
+  color: #003260;
+  /* margin-left: 2em; */
+  font-size: 3.5em;
+  margin: 0 0.5em;
 }
 
 .pladesc {
   grid-area: ds;
+  color: #003260;
+  font-size: 1.5em;
+  margin: 0 1.5em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .platitleimg {
-  width: 100%;
+  height: 60%;
+  width: auto;
+  max-width: 100%;
+  margin: 20% 5%;
+  object-fit: cover;
 }
 
 .platitleimga {
@@ -243,33 +258,88 @@
   grid-area: im2;
 }
 
-.plaimgset {
-  grid-area: ic;
-  display: inline;
+.plaimgset1 {
+  grid-area: ic1;
+}
+.plaimgset2 {
+  grid-area: ic2;
+}
+.plaimgset3 {
+  grid-area: ic3;
+}
+.plaimgset4 {
+  grid-area: ic4;
 }
 
 .plaimg {
-  width: 20%;
-  
+  width: 40%;
+  margin: 1% 2%;
+  cursor: pointer;
+  /* position: absolute; */
 }
 
-.plaimgcaptions {
-  grid-area: ca;
-  display: inline;
+.plabgsphere {
+  width: 70%;
 }
 
 .plaimgcaption {
-  
+  color: #003260;
+  font-size: 1.5em;
+  margin: 0 20%;
+  text-align: center;
+}
+
+.plaimgcaption1 {
+  grid-area: ca1;
+}
+
+.plaimgcaption2 {
+  grid-area: ca2;
+}
+
+.plaimgcaption3 {
+  grid-area: ca3;
+}
+
+.plaimgcaption4 {
+  grid-area: ca4;
 }
 
 .plabtns {
   grid-area: bt;
+  justify-items: start;
+  width: 100%;
+  overflow: hidden;
+}
+
+.plabtns > button {
+  margin-left: 4%;
+  padding: 1% 3%;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .plaseedemo {
+  background: #003260;
+  color: #fff;
+  border: #003260 1px solid;
+}
+
+.plaseedemo:hover {
+  background: #fff;
+  color: #003260;
 }
 
 .plareg {
+  background: #fff;
+  color: #003260;
+  border: #003260 1px solid;
+}
+
+.plareg:hover {
+  background: #003260;
+  color: #fff;
 }
 
 /* media query for small screens */
