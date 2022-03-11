@@ -432,4 +432,42 @@
     width: 40%;
     height: 100%;
   }
+
+  .platform {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr repeat(3, 1fr) 0.5fr 1fr 0.5fr 1fr 0.5fr 1.5fr;
+    grid-template-areas:
+      'tl tl'
+      'im1 e1'
+      'im1 im2'
+      'e2 im2'
+      'ds ds'
+      'ic1 ic2'
+      'ca1 ca2'
+      'ic3 ic4'
+      'ca3 ca4'
+      'bt bt';
+    align-items: center;
+    justify-items: center;
+  }
+  .platitle {
+    margin: 2% 5%;
+    font-size: 2.3em;
+  }
+
+  .plabtns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .plabtns > button {
+    padding: 5% 15%;
+    margin: 4% 0;
+    font-size: 1.3em;
+    border-radius: 30px;
+  }
 }
