@@ -172,6 +172,7 @@
   display: grid;
   width: 100%;
   margin: 5% 2%;
+
   grid-template-columns: 100%;
   grid-template-rows: auto auto;
   grid-template-areas:
@@ -185,6 +186,7 @@
   grid-area: title;
   text-align: center;
   color: #003260;
+
   font-size: 2em;
 }
 
@@ -194,6 +196,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: center;
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -213,7 +216,7 @@
 .platform {
   display: grid;
   grid-template-columns: repeat(3, 1fr) repeat(3, 0.5fr) 1.5fr;
-  grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.25fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr 0.25fr 0.5fr;
   grid-template-areas:
     'e1 e1 e1 e1 im1 im1 e2'
     'tl tl tl e3 im1 im1 im2'
@@ -318,6 +321,7 @@
   border-radius: 10px;
   transition: 0.3s;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .plaseedemo {
@@ -340,6 +344,127 @@
 .plareg:hover {
   background: #003260;
   color: #fff;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  color: #003260;
+  flex-wrap: wrap;
+}
+
+.ftsubtl {
+  font-size: 1.5em;
+}
+
+.fttl {
+  font-size: 4em;
+  margin: 0 20%;
+  text-align: center;
+}
+
+.ftdesc {
+  margin: 2% 10%;
+  font-size: 1.3em;
+  font-family: 'Lucida Sans ', 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fticons {
+  display: grid;
+  grid-template-areas:
+    'im1 im2 im3 im4 im5'
+    'ca1 ca2 ca3 ca4 ca5';
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 0.5fr;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.ftimg {
+  width: 30%;
+}
+
+.ftimgbgsphere {
+  width: 60%;
+}
+
+.ftimgset1 {
+  grid-area: im1;
+}
+
+.ftimgset2 {
+  grid-area: im2;
+}
+
+.ftimgset3 {
+  grid-area: im3;
+}
+
+.ftimgset4 {
+  grid-area: im4;
+}
+
+.ftimgset5 {
+  grid-area: im5;
+}
+
+.ftimgcaption {
+  font-size: 1.2em;
+  margin: 0 20%;
+  text-align: center;
+}
+
+.ftimgcap1 {
+  grid-area: ca1;
+}
+
+.ftimgcap2 {
+  grid-area: ca2;
+}
+
+.ftimgcap3 {
+  grid-area: ca3;
+}
+
+.ftimgcap4 {
+  grid-area: ca4;
+}
+
+.ftimgcap5 {
+  grid-area: ca5;
+}
+
+.ftcontacttitle {
+  font-size: 1.8em;
+  margin: 4% auto;
+  font-weight: normal;
+}
+
+.ftbookcallbtn {
+  background: #003260;
+  color: #fff;
+  border: #003260 1px solid;
+  outline: none;
+  font-size: 1.2em;
+  padding: 1% 4%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ftbookcallbtn:hover {
+  background: #fff;
+  color: #003260;
+}
+
+@media screen and (min-width: 780px) {
+  .clients {
+    margin-bottom: 0;
+  }
 }
 
 /* media query for small screens */
@@ -468,6 +593,52 @@
     padding: 5% 15%;
     margin: 4% 0;
     font-size: 1.3em;
+    border-radius: 30px;
+  }
+
+  .features {
+    margin: 2% 0%;
+    max-width: 100vh;
+    overflow: hidden;
+  }
+  .ftsubtl {
+    font-size: 1.5em;
+    margin: 10% 10%;
+    text-align: center;
+    letter-spacing: 0.3em;
+  }
+  .fttl {
+    font-size: 2.3em;
+    margin: 2% 2%;
+  }
+  .ftdesc {
+    margin: 5% 5%;
+    font-size: 1.2em;
+  }
+  .fticons {
+    grid-template-areas:
+      'im1 im1 im2 im2 im3 im3'
+      'ca1 ca1 ca2 ca2 ca3 ca3'
+      'e1 im4 im4 im5 im5 e2'
+      'e1 ca4 ca4 ca5 ca5 e2';
+    grid-template-columns: repeat(6, 0.5fr);
+    grid-template-rows: 1fr 0.25fr 1fr 0.25fr;
+    margin: 2% 2%;
+  }
+  .fticons > * {
+    padding: 5%;
+  }
+  .ftimgcaption {
+    font-size: 0.75em;
+  }
+
+  .ftcontacttitle {
+    text-align: center;
+    margin: 10% 5%;
+  }
+
+  .ftbookcallbtn {
+    padding: 5% 10%;
     border-radius: 30px;
   }
 }

@@ -144,7 +144,6 @@ export default function Home({ clients, partners, testimonials, titleSlider }) {
             User Based Insurance
           </h6>
           <h6 className={`${styles.plaimgcaption2} ${styles.plaimgcaption}`}>
-            {' '}
             Mobility
           </h6>
           <h6 className={`${styles.plaimgcaption3} ${styles.plaimgcaption}`}>
@@ -160,129 +159,152 @@ export default function Home({ clients, partners, testimonials, titleSlider }) {
           </div>
         </div>
 
-        <div>
-          <h3 className={styles.txt}>WHAT MAKE US UNIQUE</h3>
-          <h3 className={styles.txta}>
+        <div className={styles.features}>
+          <h3 className={styles.ftsubtl}>WHAT MAKES US UNIQUE</h3>
+          <h3 className={styles.fttl}>
             We&apos;re international award winning platform
           </h3>
-        </div>
 
-        <p4>
-          Our assessment model is globally unique and cutting edge. We use
-          sensor fusion - Apps, IoTs, Standard
-          &#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;Hardware
-          Interfaces to collect workplace data. Pradjna uses revolutionary
-          Artificial General Intelligence
-          <br />
-          &#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;(AGI)
-          technology for data analytics. Our AGI platform mimics the human
-          neo-cortex.{' '}
-        </p4>
+          <p className={styles.ftdesc}>
+            Our assessment model is globally unique and cutting edge. We use
+            sensor fusion - Apps, IoTs, Standard Hardware Interfaces to collect
+            workplace data. Pradjna uses revolutionary Artificial General
+            Intelligence (AGI) technology for data analytics. Our AGI platform
+            mimics the human neo-cortex.
+          </p>
 
-        <div className={styles.era}>
-          <img src="Ellipse 2.png" className={styles.img101} />
-          <img src="Ellipse 2.png" className={styles.img101} />{' '}
-          <img src="Ellipse 2.png" className={styles.img101} />{' '}
-          <img src="Ellipse 2.png" className={styles.img101} />{' '}
-          <img src="Ellipse 2.png" className={styles.img101} />
-          <div className="kuu">
-            <img src="aim.png" className={styles.img111} />{' '}
-            <img src="value.png" className={styles.img111} />{' '}
-            <img src="open-24-hours.png" className={styles.img111} />{' '}
-            <img src="data-driven.png" className={styles.img111} />{' '}
-            <img src="scalability.png" className={styles.img111} />
+          <div className={styles.fticons}>
+            <img
+              src="/orange_sphere.png"
+              className={`${styles.ftimgbgsphere} ${styles.ftimgset1} ${styles.ftimg}`}
+            />
+            <img
+              src="/orange_sphere.png"
+              className={`${styles.ftimgbgsphere} ${styles.ftimgset2} ${styles.ftimg}`}
+            />
+            <img
+              src="/orange_sphere.png"
+              className={`${styles.ftimgbgsphere} ${styles.ftimgset3} ${styles.ftimg}`}
+            />
+            <img
+              src="/orange_sphere.png"
+              className={`${styles.ftimgbgsphere} ${styles.ftimgset4} ${styles.ftimg}`}
+            />
+            <img
+              src="/orange_sphere.png"
+              className={`${styles.ftimgbgsphere} ${styles.ftimgset5} ${styles.ftimg}`}
+            />
+            <img
+              src="aim.png"
+              className={`${styles.ftimgset1} ${styles.ftimg}`}
+            />
+            <img
+              src="value.png"
+              className={`${styles.ftimgset2} ${styles.ftimg}`}
+            />
+            <img
+              src="open-24-hours.png"
+              className={`${styles.ftimgset3} ${styles.ftimg}`}
+            />
+            <img
+              src="data-driven.png"
+              className={`${styles.ftimgset4} ${styles.ftimg}`}
+            />
+            <img
+              src="scalability.png"
+              className={`${styles.ftimgset5} ${styles.ftimg}`}
+            />
+            <h6 className={`${styles.ftimgcap1} ${styles.ftimgcaption}`}>
+              Objective And Unbiased
+            </h6>
+            <h6 className={`${styles.ftimgcap2} ${styles.ftimgcaption}`}>
+              Value For Money
+            </h6>
+            <h6 className={`${styles.ftimgcap3} ${styles.ftimgcaption}`}>
+              24/7 Availability
+            </h6>
+            <h6 className={`${styles.ftimgcap4} ${styles.ftimgcaption}`}>
+              Data Driven
+            </h6>
+            <h6 className={`${styles.ftimgcap5} ${styles.ftimgcaption}`}>
+              Highly Scalable
+            </h6>
           </div>
-          <div className="hello">
-            <h7 className="h7">
-              <br />
-              &#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;Objective
-              And
-              <br />
-              &#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;Unbiased
-            </h7>
-            <div className={styles.chin}>
-              <h8 className={styles.hii}>Value For Money</h8>
-              <h8 className={styles.hiia}>24/7 Availability</h8>
-              <h8 className={styles.hiib}>Data Driven</h8>
-              <h8 className={styles.hiic}>Highly Scalable</h8>
-            </div>
 
-            <div className={styles.know}>
-              <br />
-              <br />
-              <h7 className={styles.fits}>KNOW HOW PRADJNA FITS FOR YOU</h7>
-              <br />
-              <br />
-              <button className={styles.bookc}>BOOK A CALL</button>
+          <h6 className={styles.ftcontacttitle}>
+            KNOW HOW PRADJNA FITS FOR YOU
+          </h6>
 
-              <br />
-              <br />
-              <br />
-              <br />
-              <h7 className={styles.part}>OUR PARTNERS</h7>
-            </div>
-          </div>
-          <div className={styles.mama}>
+          <button className={styles.ftbookcallbtn}>BOOK A CALL</button>
+
+          <h6 className={`${styles.cltitle} ${styles.partitle}`}>
+            OUR PARTNERS
+          </h6>
+
+          <div className={`${styles.climgContainer} ${styles.parcontainer}`}>
             {partners.map((partner, key) => (
-              <img src={partner.asset.url} className={styles.imgaa} key={key} />
+              <img
+                src={partner.asset.url}
+                className={`${styles.climg} ${styles.parimg}`}
+                key={key}
+              />
             ))}
           </div>
-          <br />
-          <br />
-          {testimonials.map((testimonial, key) => (
-            <div className={styles.jjj} key={key}>
+        </div>
+
+        {testimonials.map((testimonial, key) => (
+          <div className={styles.jjj} key={key}>
+            <br />
+            <br />
+            <h7 className={styles.blank}> “</h7>
+
+            <br />
+            <br />
+            <h7 className={styles.blank}>
+              <b>{formatName(testimonial.clientName)} says,</b>
+            </h7>
+            <br />
+            <br />
+            <h7 className={styles.blaa}>{testimonial.testimonial}</h7>
+
+            <br />
+            <br />
+            <br />
+            <h7 className={styles.abc}>
+              {testimonial.clientName.toUpperCase()}
+            </h7>
+            <div className={styles.abb}>
               <br />
               <br />
-              <h7 className={styles.blank}> “</h7>
+              <h7 className={styles.abcd}>{testimonial.clientRole}</h7>
 
               <br />
               <br />
-              <h7 className={styles.blank}>
-                <b>{formatName(testimonial.clientName)} says,</b>
-              </h7>
-              <br />
-              <br />
-              <h7 className={styles.blaa}>{testimonial.testimonial}</h7>
+              <h7 className={styles.blankk}>,,</h7>
+            </div>
 
-              <br />
-              <br />
-              <br />
-              <h7 className={styles.abc}>
-                {testimonial.clientName.toUpperCase()}
-              </h7>
-              <div className={styles.abb}>
-                <br />
-                <br />
-                <h7 className={styles.abcd}>{testimonial.clientRole}</h7>
-
-                <br />
-                <br />
-                <h7 className={styles.blankk}>,,</h7>
-              </div>
-
-              {/* <video width='320' height='240' autoPlay muted>
+            {/* <video width='320' height='240' autoPlay muted>
                 <source src={testimonial.testimonialVideo.asset.url} type='video/mp4' />
                 Your browser does not support the video tag.
               </video> */}
 
-              <div
-                onClick={() => {
-                  setIsPlaying(!isPlaying)
-                  setIsMuted(false)
-                }}
-              >
-                <ReactPlayer
-                  url={testimonial.testimonialVideo.asset.url}
-                  width={320}
-                  height={240}
-                  loop={true}
-                  playing={isPlaying}
-                  muted={isMuted}
-                />
-              </div>
+            <div
+              onClick={() => {
+                setIsPlaying(!isPlaying)
+                setIsMuted(false)
+              }}
+            >
+              <ReactPlayer
+                url={testimonial.testimonialVideo.asset.url}
+                width={320}
+                height={240}
+                loop={true}
+                playing={isPlaying}
+                muted={isMuted}
+              />
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
 
         <div className={styles.bot}>
           <ul>
