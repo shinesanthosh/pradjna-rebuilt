@@ -461,6 +461,99 @@
   color: #003260;
 }
 
+.testimonials {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  background: #003260;
+  position: relative;
+}
+
+.testimonial {
+  color: #fff;
+  display: grid;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    'qs e1'
+    'tl e2'
+    'ts vid'
+    'bio vid'
+    'role vid'
+    'e3 te';
+  align-items: center;
+}
+
+.tesquotestart {
+  color: #fff;
+  font-size: 10em;
+  margin: 0;
+  /* position: absolute; */
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 0 10%;
+  grid-area: qs;
+}
+
+.tesname {
+  grid-area: tl;
+  padding-left: 10%;
+  /* padding-top: 10%; */
+  font-size: 2.5em;
+  margin: 5% 0;
+}
+
+.tescontent {
+  grid-area: ts;
+  padding: 0 10%;
+  margin: 0 0;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.tesbioname {
+  grid-area: bio;
+  font-size: 1.5em;
+  position: relative;
+  top: 0;
+  padding-left: 10%;
+  margin-bottom: 1%;
+}
+.tesbiorole {
+  grid-area: role;
+  position: relative;
+  top: 0;
+  font-size: 1.5em;
+  padding-left: 10%;
+  margin: 0;
+}
+.tesvideo {
+  grid-area: vid;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.tesquoteend {
+  grid-area: te;
+  color: #fff;
+  font-size: 10em;
+  margin: 0;
+  /* position: relative; */
+  margin-top: 0;
+  right: 0;
+  padding-left: 40%;
+}
+
+.tesvideo > video {
+  width: 90%;
+  height: auto;
+}
+
 @media screen and (min-width: 780px) {
   .clients {
     margin-bottom: 0;
@@ -640,5 +733,26 @@
   .ftbookcallbtn {
     padding: 5% 10%;
     border-radius: 30px;
+  }
+  .testimonial {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+      'qs'
+      'tl'
+      'vid'
+      'ts'
+      'bio'
+      'role'
+      'te';
+  }
+
+  .tesvideo > video {
+    width: 90%;
+    margin: 3% 5%;
+  }
+
+  .tescontent {
+    font-size: 1.8em;
   }
 }

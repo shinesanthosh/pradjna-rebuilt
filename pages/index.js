@@ -1,5 +1,5 @@
 import ReactPlayer from 'react-player'
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 
 import styles from '../styles/Home.module.css'
 import Menu from '../components/menu'
@@ -30,9 +30,9 @@ const formatName = str => {
 }
 
 export default function Home({ clients, partners, testimonials, titleSlider }) {
-  const [isPlaying, setIsPlaying] = useState(true)
-  const [isMuted, setIsMuted] = useState(true)
+  const [isPlaying, setIsPlaying] = useState(false)
 
+  let vidControls = isPlaying ? 'controls' : ''
   return (
     <>
       <div className={styles.wrapper}>
@@ -252,59 +252,33 @@ export default function Home({ clients, partners, testimonials, titleSlider }) {
           </div>
         </div>
 
-        {testimonials.map((testimonial, key) => (
-          <div className={styles.jjj} key={key}>
-            <br />
-            <br />
-            <h7 className={styles.blank}> “</h7>
+        <div className={styles.testimonials}>
+          {testimonials.map((testimonial, key) => (
+            <div className={styles.testimonial} key={key}>
+              <h6 className={styles.tesquotestart}> “</h6>
+              <h6 className={styles.tesname}>
+                {formatName(testimonial.clientName)} says,
+              </h6>
 
-            <br />
-            <br />
-            <h7 className={styles.blank}>
-              <b>{formatName(testimonial.clientName)} says,</b>
-            </h7>
-            <br />
-            <br />
-            <h7 className={styles.blaa}>{testimonial.testimonial}</h7>
+              <h6 className={styles.tescontent}>{testimonial.testimonial}</h6>
 
-            <br />
-            <br />
-            <br />
-            <h7 className={styles.abc}>
-              {testimonial.clientName.toUpperCase()}
-            </h7>
-            <div className={styles.abb}>
-              <br />
-              <br />
-              <h7 className={styles.abcd}>{testimonial.clientRole}</h7>
+              <h6 className={styles.tesbioname}>
+                {testimonial.clientName.toUpperCase()}
+              </h6>
 
-              <br />
-              <br />
-              <h7 className={styles.blankk}>,,</h7>
+              <h6 className={styles.tesbiorole}>{testimonial.clientRole}</h6>
+              <h6 className={styles.tesquoteend}>,,</h6>
+
+              <div className={styles.tesvideo}>
+                <video
+                  src={testimonial.testimonialVideo.asset.url}
+                  preload="metadata"
+                  controls
+                />
+              </div>
             </div>
-
-            {/* <video width='320' height='240' autoPlay muted>
-                <source src={testimonial.testimonialVideo.asset.url} type='video/mp4' />
-                Your browser does not support the video tag.
-              </video> */}
-
-            <div
-              onClick={() => {
-                setIsPlaying(!isPlaying)
-                setIsMuted(false)
-              }}
-            >
-              <ReactPlayer
-                url={testimonial.testimonialVideo.asset.url}
-                width={320}
-                height={240}
-                loop={true}
-                playing={isPlaying}
-                muted={isMuted}
-              />
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
 
         <div className={styles.bot}>
           <ul>
