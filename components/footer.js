@@ -1,89 +1,88 @@
 import React from 'react'
+import Link from 'next/link'
 
 import styles from '../styles/Footer.module.css'
 
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <div className={styles.bot}>
-        <ul>
-          <br />
+      <div className={styles.navbar}>
+        <ul className={styles.information}>
           <li>
             <strong>Information</strong>
           </li>
-          <br />
-          <br />
-          <li>Home</li>
-          <br />
-          <li>Services</li>
-          <br />
-          <li>Solution</li>
-          <br />
-          <li>FAQ</li>
-          <br />
-          <li>Privacy Policy</li>
+
+          <li>
+            <Link href="/"> Home</Link>
+          </li>
+
+          <li>
+            <Link href="/products"> Services</Link>
+          </li>
+
+          <li>
+            <Link href="/products"> Solution</Link>
+          </li>
+
+          <li>
+            <Link href="/products"> FAQ</Link>
+          </li>
+
+          <li>
+            <Link href="#"> Privacy Policy</Link>
+          </li>
         </ul>
-        <ul className={styles.Com}>
-          <br />
+        <ul className={styles.company}>
           <li>
             <strong>Company</strong>
           </li>
-          <br />
-          <br />
+
           <li>
-            <a href="#">About Us</a>
+            <Link href="/about">About Us</Link>
           </li>
-          <br />
+
           <li>
-            <a href="#">Contact Us</a>
+            <Link href="/contact">Contact Us</Link>
           </li>
-          <br />
+
           <li>
-            <a href="#">Journal</a>
+            <Link href="/blog">Journal</Link>
           </li>
-          <br />
+
           <li>
-            <a href="#">Register</a>
+            <Link href="/register">Register</Link>
           </li>
-          <br />
+
           <li>
-            <a href="#">Login</a>
+            <Link href="/login">Login</Link>
           </li>
-          <br />
         </ul>
       </div>
-      <div className={styles.mid}>
-        <br />
-        <br />
-        <h3 className={styles.head}>pradjna</h3>
-        <br />
-        <p9 className={styles.manual}>
-          Pradjna is a cutting edge B2B HR performance
-          <br /> management platform focused on re-
-          <br />
-          engineering legacy business processes using <br />
-          Machine Learning.
-        </p9>
-        <br />
-        <img src="Ellipse 26.png" className={styles.imej} width="20px" />
-        <img src="Ellipse 25.png" className={styles.imej} width="20px" />
-        <img src="Ellipse 27.png" className={styles.imej} width="20px" />
-        <br />
+      <div className={styles.about}>
+        <h3 className={styles.abouttitle}>pradjna</h3>
+
+        <p className={styles.aboutdesc}>
+          Pradjna is a cutting edge B2B HR performance management platform
+          focused on re- engineering legacy business processes using Machine
+          Learning.
+        </p>
+
+        <img src="Ellipse 26.png" className={styles.aboutimg} />
+        <img src="Ellipse 25.png" className={styles.aboutimg} />
+        <img src="Ellipse 27.png" className={styles.aboutimg} />
       </div>
-      <div className={styles.lasti}>
-        <h4 className={styles.gett}>Get news and updates!</h4>
-        <br />
-        <p10>Learn about growing your business.</p10>
-        <br />
-        <div className={styles.subii}>
-          <input className={styles.subi} type="search" id="quary" />
-          <button className={styles.aaa} value="submit">
-            SUBSCRIBE
-          </button>
-        </div>
+      <div className={styles.subscribe}>
+        <h4 className={styles.substitle}>Get news and updates!</h4>
+
+        <p>Learn about growing your business.</p>
+
+        <input className={styles.subsemail} type="search" id="quary" />
+        <button className={styles.subsubmit} value="submit">
+          SUBSCRIBE
+        </button>
       </div>
-      <br />
-      <p11 className={styles.copyi}> Copyright © Pradjna Intellisys</p11>
+
+      <p className={styles.copyright}> Copyright © Pradjna Intellisys</p>
     </div>
   )
 }
