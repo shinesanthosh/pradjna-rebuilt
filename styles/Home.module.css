@@ -182,6 +182,10 @@
   grid-auto-flow: row;
 }
 
+.climgContainer::-webkit-scrollbar {
+  display: none;
+}
+
 .cltitle {
   grid-area: title;
   text-align: center;
@@ -199,6 +203,8 @@
   justify-content: center;
   overflow-x: auto;
   overflow-y: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
 }
 
 .climgContainer > * {
@@ -464,6 +470,7 @@
 .testimonials {
   width: 100vw;
   height: auto;
+  min-height: 100vh;
   overflow: hidden;
   background: #003260;
   position: relative;
@@ -747,12 +754,25 @@
       'te';
   }
 
-  .tesvideo > video {
-    width: 90%;
-    margin: 3% 5%;
+  .tesname {
+    font-size: 1.5em;
+  }
+
+  .tesbioname,
+  .tesbiorole {
+    font-size: 1em;
   }
 
   .tescontent {
-    font-size: 1.8em;
+    font-size: 1em;
+  }
+
+  .tesvideo > video {
+    width: 80%;
+    margin: 5% 10%;
+  }
+
+  .tesquoteend {
+    padding-left: 70%;
   }
 }
