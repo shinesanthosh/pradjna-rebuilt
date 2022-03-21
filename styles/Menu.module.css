@@ -54,6 +54,20 @@
   max-height: 100%;
 }
 
+/* Second Color theme */
+
+.navbtn2 {
+  color: #003260;
+  padding: 10px;
+}
+
+.regbtn2 {
+  color: #fff;
+  background: #003260;
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
 @media screen and (max-width: 780px) {
   .menuContainer {
     justify-content: center;
@@ -86,22 +100,21 @@
     max-height: 100%;
   }
 
-  .navul > li > a{
-    font-size:1.5em;
-    
+  .navul > li > a {
+    font-size: 1.5em;
   }
-  .navul > li{
-    margin-top:50px;
+  .navul > li {
+    margin-top: 50px;
   }
 
-  .navbtn{
+  .navbtn {
     color: #003260;
   }
 
-  .regbtn{
+  .regbtn {
     color: #fff;
     background: #003260;
-    padding:2vh 6vw;
+    padding: 2vh 6vw;
     border-radius: 30px;
   }
 }
