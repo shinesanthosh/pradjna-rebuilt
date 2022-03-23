@@ -44,36 +44,35 @@ const Products = ({ workflow, products, faqs }) => {
 
       <div className={styles.features}>
         <h2 className={styles.fttitle}>Track, Infer ,Correct</h2>
-        <ul className={`${styles.ul} ${styles.ellip}`}>
-          <li className={styles.img1}>
-            <img className={styles.el1} src="Ellipse 18.png" />
-            <p className={styles.p1}>
-              <bold>Highly Customisable</bold>
-              <a className={styles.learn} href="#">
-                LEARN MORE
-              </a>
-            </p>
-          </li>
-          <li className={styles.img2}>
+
+        <div className={styles.fticonscontainer}>
+          <div className={styles.fticon}>
+            <img className={styles.fticonimg} src="Ellipse 18.png" />
+
+            <span className={styles.fticontext}>
+              Highly Customisable
+              <Link href="#">LEARN MORE &gt;</Link>
+            </span>
+          </div>
+
+          <div className={styles.fticon}>
             <img src="Ellipse 19.png" />
-            <p className={styles.p2}>
+            <span className={styles.fticontext}>
               Platform as a Service
-              <a className={styles.learn} href="#">
-                LEARN MORE
-              </a>
-            </p>
-          </li>
-          <li className={styles.img3}>
+              <Link href="#">LEARN MORE &gt;</Link>
+            </span>
+          </div>
+
+          <div className={styles.fticon}>
             <img src="Ellipse 20.png" />
-            <p className={styles.p3}>
+            <span className={styles.fticontext}>
               Dynamic and Evolving
-              <a className={styles.learn} href="#">
-                LEARN MORE
-              </a>
-            </p>
-          </li>
-        </ul>
-        <p className={styles.para}>
+              <Link href="#">LEARN MORE &gt;</Link>
+            </span>
+          </div>
+        </div>
+
+        <p className={styles.ftdesc}>
           At Pradjna, we bring specific expertise in unsupervised Motor skills
           assessments. With minimum impact to your simulator based or
           proprietary candidate data, we can do the data collection, anal on the
@@ -83,6 +82,8 @@ const Products = ({ workflow, products, faqs }) => {
           their proprietary processes. Companies face significant bottle neck
           due to limited time, scarcity of expert resources and lack of
           objectivity. These are the key gaps that are addressed by our platform
+        </p>
+        <p className={styles.ftdesc}>
           Also it is important to note that all major corporations world wide
           are moving away from bell curve based performance normalization to
           continuous assessments model. We believe there is a great opportunity
@@ -90,11 +91,11 @@ const Products = ({ workflow, products, faqs }) => {
           for building suitable patterns for continuous performance assessments.
         </p>
 
-        <h2 className={styles.get}>Get to know your employees better!</h2>
+        <h3>Get to know your employees better!</h3>
 
-        <h3 className={styles.open}>Open the gateway to your success</h3>
+        <h4>Open the gateway to your success</h4>
 
-        <button className={styles.book}>BOOK A CALL</button>
+        <button className={styles.ftbookcallbtn}>BOOK A CALL</button>
       </div>
 
       <h3 className={styles.work}>The Workflow</h3>

@@ -10,6 +10,8 @@
   overflow: hidden;
 }
 
+/* --- Hero section --- */
+
 /* The container for hero of the page */
 .titleContent {
   display: flex;
@@ -57,6 +59,8 @@
   background: #fff;
 }
 
+/* --- 'sub-title' --- */
+
 /* The images after the title, the container */
 
 .sbtlimgcontainer {
@@ -67,12 +71,105 @@
   justify-content: center;
 }
 
-/* The dbu-title images */
+/* The sub-title images */
 .sbtlimg {
   width: 20%;
   padding: 0 2%;
 }
 
+/* --- Features Section --- */
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #003260;
+}
+
+/* Title for the features section */
+.fttitle {
+  font-size: 4em;
+}
+
+/* Features Icons Container */
+.fticonscontainer {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2%;
+  justify-content: space-evenly;
+}
+
+/* The feature icon divs */
+.fticon {
+  display: flex;
+}
+
+/* Features icons img elememts */
+.fticon img {
+  width: 60%;
+}
+
+/* Text in the features icon */
+.fticontext {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.fticon * {
+  margin: 0 0 5% 10%;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.fticontext a {
+  text-decoration: none;
+  margin: 10% 0 0 0;
+  font-size: 0.5em;
+  color: #003260;
+  font-family: var(--font-sec);
+}
+
+/* Features description */
+.ftdesc {
+  margin: 2% 8%;
+  margin-top: 0;
+
+  font-size: 1.2em;
+  font-family: var(--font-sec);
+}
+
+/* Bottom main title in features section */
+.features > h3 {
+  font-size: 2.2em;
+  margin: 0;
+  margin-top: 5%;
+}
+
+.features > h4 {
+  font-size: 1.8em;
+  margin-top: 1%;
+}
+
+/* Book a call button in the features section */
+
+.ftbookcallbtn {
+  background: #003260;
+  color: #fff;
+  border: #003260 1px solid;
+  font-size: 1.2em;
+  padding: 2% 4%;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ftbookcallbtn:hover {
+  background: #fff;
+  color: #003260;
+}
+
+/* ------------------------------------------------------ */
 /* Styling for smaller screens */
 @media screen and (max-width: 780px) {
   .titleContent {
@@ -85,13 +182,75 @@
   }
 
   .titledesc {
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 5%;
   }
 
   .explorebtn {
     font-size: 1em;
-    padding: 2% 5%;
+    padding: 4% 5%;
+    margin: 5%;
+  }
+
+  .sbtlimgcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sbtlimg {
+    width: 60%;
+    margin: 2% 0;
+  }
+
+  .fttitle {
+    font-size: 2em;
+    margin: 10% 0;
+  }
+
+  .fticonscontainer {
+    flex-direction: column;
+  }
+
+  .fticon {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fticon * {
+    margin: 0;
+  }
+
+  .fticon img {
+    width: 30%;
+  }
+
+  .fticontext {
+    align-items: center;
+    margin: 5% 0;
+  }
+
+  .fticontext a {
+    margin: 3% 0;
+    font-size: 0.7em;
+  }
+
+  .ftdesc {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .features h3 {
+    text-align: center;
+  }
+  .features h4 {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 5% 1%;
+  }
+
+  .ftbookcallbtn {
+    font-size: 1em;
+    padding: 4% 8%;
     margin: 5%;
   }
 }
