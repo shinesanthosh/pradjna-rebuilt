@@ -8,6 +8,7 @@
   margin: 0;
   max-width: 100vw;
   overflow: hidden;
+  color: #003260;
 }
 
 /* --- Hero section --- */
@@ -169,6 +170,54 @@
   color: #003260;
 }
 
+/* --- The workflow section --- */
+.workflow {
+  margin-top: 10%;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  /* color: #003260; */
+}
+
+/* The title of the workflow section */
+.workflow h3 {
+  font-size: 2.5rem;
+}
+
+/* Sliding image container */
+.workflowSlider {
+  width: auto;
+
+  display: flex;
+  flex-direction: row;
+  animation: 30s slide infinite;
+}
+
+/* Images inside the slider */
+.workflowSlider > img {
+  width: 50%;
+  margin: 0 2%;
+}
+
+.workflowSlider:hover {
+  animation-play-state: paused;
+}
+
+/* The sliding animation */
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+
+  50% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 /* ------------------------------------------------------ */
 /* Styling for smaller screens */
 @media screen and (max-width: 780px) {
@@ -252,5 +301,22 @@
     font-size: 1em;
     padding: 4% 8%;
     margin: 5%;
+  }
+
+  .workflowSlider > img {
+    width: 100%;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(-300%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
   }
 }

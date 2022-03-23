@@ -98,14 +98,14 @@ const Products = ({ workflow, products, faqs }) => {
         <button className={styles.ftbookcallbtn}>BOOK A CALL</button>
       </div>
 
-      <h3 className={styles.work}>The Workflow</h3>
+      <div className={styles.workflow}>
+        <h3>The Workflow</h3>
 
-      <div className={styles.slider}>
-        <figure>
+        <div className={styles.workflowSlider}>
           {workflow.map((workflowItem, key) => (
             <img src={workflowItem.asset.url} key={key} />
           ))}
-        </figure>
+        </div>
       </div>
 
       <img className={styles.dots} src="Group 149.png" />
