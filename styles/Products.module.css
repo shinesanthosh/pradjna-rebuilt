@@ -218,8 +218,144 @@
   }
 }
 
+/* --- Products Section ---*/
+.products {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+/* Individual products */
+.product {
+  width: 90%;
+  display: flex;
+  margin: 10% 0;
+  border-radius: 20px;
+  height: 80vh;
+  min-height: 410px;
+}
+
+/* Images in the product */
+.product > img {
+  width: auto;
+  max-width: 40%;
+  height: 100%;
+  margin: 5%;
+  object-fit: cover;
+}
+
+/* Products in even positions */
+.producta {
+  background: #003260;
+  color: #fff;
+}
+
+/* Images in producta */
+.producta > img {
+  transform: translateY(10%);
+}
+
+/* Products in odd positions */
+.productb {
+  background: #ddd;
+}
+
+/* Images in productb */
+.productb > img {
+  transform: translateY(-20%);
+}
+
+/* Text content of each product block */
+.procontent {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  padding: 0 2%;
+}
+
+/* title of the product blocks*/
+.protitle {
+  font-size: 3em;
+}
+
+/* The description in each product block */
+.prodesc {
+  font-family: var(--font-sec);
+  font-size: 1.1em;
+}
+
+/* link to seperate product pages */
+.prolink {
+  text-decoration: none;
+  display: block;
+  margin-top: 1.5em;
+  font-size: 0.9em;
+}
+
+/* Link for product a */
+.producta a {
+  color: #fff;
+}
+
+/* Link for product b */
+.productb a {
+  color: #003260;
+}
+
+/* Usecase titie */
+.useCaseTitle {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Usecase List */
+.useCaseList {
+  display: flex;
+  justify-content: space-between;
+  height: 20%;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Usecase items */
+.useCase {
+  display: flex;
+  width: 30%;
+  align-items: center;
+}
+
+/* Images in useCase items */
+.useCaseimg {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+/* useCase title  */
+.useCaseName {
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+  margin-left: 10%;
+  font-weight: bold;
+}
+
+/* Link to usecase */
+.useCaseLink {
+  text-decoration: none;
+  display: block;
+
+  font-size: 0.75rem;
+  font-weight: normal;
+  margin-top: 1em;
+  font-family: var(--font-sec);
+}
+
 /* ------------------------------------------------------ */
-/* Styling for smaller screens */
+/* Styling for smaller screens - generic */
 @media screen and (max-width: 780px) {
   .titleContent {
     height: auto;
@@ -318,5 +454,70 @@
     100% {
       transform: translateX(0);
     }
+  }
+}
+
+/* Styling for smaller screens (products section) */
+@media screen and (max-width: 1024px) {
+  .product {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 100%;
+    border-radius: 40px;
+  }
+
+  .procontent {
+    order: 2;
+    width: 90%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 10%;
+    overflow: visible;
+  }
+
+  .product > img {
+    max-width: 70%;
+    border-radius: 50px;
+    transform: translateY(-50%);
+    margin-bottom: -50%;
+    order: 1;
+  }
+
+  .protitle {
+    font-size: 2em;
+  }
+
+  .prodesc {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+
+  .prolink {
+    font-weight: bold;
+  }
+  .useCaseTitle {
+    margin: 5% 0;
+  }
+  .useCaseList {
+    flex-direction: column;
+    align-items: center;
+  }
+  .useCase {
+    margin: 5% 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .useCase > p {
+    text-align: left;
+  }
+
+  .useCaseName {
+    font-size: 1.3rem;
+  }
+
+  .useCaseLink {
+    font-size: 1rem;
   }
 }

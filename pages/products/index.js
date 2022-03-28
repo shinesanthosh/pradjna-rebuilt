@@ -7,7 +7,7 @@ import styles from '../../styles/Products.module.css'
 
 export const getStaticProps = async () => {
   const url = process.env.CMSURL
-  const query = `*[slug.current == 'products-page']{faqs,products[]->{title,image{asset->{url}},useCases[]->{title,slug{current}},description,id},workflow[]{asset->{url}},}`
+  const query = `*[slug.current == 'products-page']{faqs,products[]->{title,image{asset->{url}},useCases[0..2]->{title,slug{current}},description,id},workflow[]{asset->{url}},}`
   const res = await fetch(url + '?query=' + encodeURIComponent(query))
   const data = await res.json()
 
@@ -108,51 +108,61 @@ const Products = ({ workflow, products, faqs }) => {
         </div>
       </div>
 
-      <img className={styles.dots} src="Group 149.png" />
+      <div className={styles.products}>
+        {products.map((product, key) => {
+          return (
+            <div
+              className={`${styles.product} ${
+                key % 2 == 0 ? styles.producta : styles.productb
+              }`}
+              key={key}
+            >
+              {key % 2 == 0 ? (
+                <img className={styles.proimg} src={product.image.asset.url} />
+              ) : null}
+              <div className={styles.procontent}>
+                <h2 className={styles.protitle}>{product.title}</h2>
 
-      {products.map((product, key) => {
-        return (
-          <div className={styles.box} key={key}>
-            <img className={styles.usecase1} src={product.image.asset.url} />
-            <div className={styles.content}>
-              <h2 className={styles.welder}>{product.title}</h2>
+                <p className={styles.prodesc}>
+                  {product.description}
+                  <Link href={`/products/${product.id.current}`}>
+                    <a className={styles.prolink}>LEARN MORE &gt;</a>
+                  </Link>
+                </p>
 
-              <p className={styles.weldp}>
-                {product.description}
-                <Link
-                  className={styles.link}
-                  href={`/products/${product.id.current}`}
-                >
-                  LEARN MORE
-                </Link>
-              </p>
+                <h2 className={styles.useCaseTitle}>Usecases</h2>
 
-              <h2 className={styles.use}>Usecases</h2>
+                <ul className={styles.useCaseList}>
+                  {product.useCases.map((useCase, key) => {
+                    return (
+                      <li className={styles.useCase} key={key}>
+                        <img
+                          className={styles.useCaseimg}
+                          src="Ellipse 32.png"
+                        />
+                        <p className={styles.useCaseName}>
+                          {useCase.title}
 
-              <ul className={`${styles.ul} ${styles.uses}`}>
-                {product.useCases.map((useCase, key) => {
-                  return (
-                    <li className={styles.usea} key={key}>
-                      <img className={styles.use1} src="Ellipse 32.png" />
-                      <p className={styles.usep1}>
-                        {useCase.title}
-
-                        <Link
-                          className={styles.link1}
-                          href={`/products/usecases/${useCase.slug.current}`}
-                        >
-                          LEARN MORE
-                        </Link>
-                      </p>
-                    </li>
-                  )
-                })}
-              </ul>
+                          <Link
+                            href={`/products/usecases/${useCase.slug.current}`}
+                          >
+                            <a className={styles.useCaseLink}>
+                              LEARN MORE &gt;
+                            </a>
+                          </Link>
+                        </p>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
+              {key % 2 != 0 ? (
+                <img className={styles.proimg} src={product.image.asset.url} />
+              ) : null}
             </div>
-          </div>
-        )
-      })}
-
+          )
+        })}
+      </div>
       <div className={styles.ques}>
         <h1 className={styles.q}>Questions?</h1>
 
