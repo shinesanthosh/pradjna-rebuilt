@@ -169,18 +169,18 @@ const Products = ({ workflow, products, faqs }) => {
 
         <Faq faqs={faqs} />
       </div>
-      <div className={styles.start}>
-        <h2 className={styles.starth}>Get started on your journey</h2>
 
-        <p className={styles.startp}>
+      <div className={styles.end}>
+        <h2 className={styles.endtitle}>Get started on your journey</h2>
+
+        <p className={styles.enddesc}>
           Pradjna is based on a revolutionary Machine Learning framework. This
-          platform can be considered a scaled down &emsp;&emsp;&emsp;version of
-          the human brain with appropriate level of intelligence.
+          platform can be considered a scaled down version of the human brain
+          with appropriate level of intelligence.
         </p>
-
-        <button className={styles.r1} type="submit">
-          REGISTER
-        </button>
+        <Link href="/register">
+          <a className={styles.endreg}>REGISTER</a>
+        </Link>
       </div>
 
       <Footer />

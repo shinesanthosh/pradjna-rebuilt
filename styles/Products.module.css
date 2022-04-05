@@ -371,6 +371,58 @@
   margin: 0;
 }
 
+/* The ending section of the product page */
+.end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 0;
+  background: #003260;
+  width: 100%;
+  padding: 2% 0;
+}
+
+/* Children of the end element */
+.end * {
+  color: #fff;
+}
+
+/* The title of the end section */
+.endtitle {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* The description of the end section */
+.enddesc {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 2% 10%;
+  font-weight: normal;
+  line-height: 2rem;
+  font-family: var(--font-sec);
+}
+
+/* The register button in the end section */
+.endreg {
+  background: #fff;
+  color: #003260;
+  text-decoration: none;
+  padding: 2% 5%;
+  border: 1px solid #003260;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: var(--font-sec);
+  transition: 0.3s;
+}
+/* Hover effect of the button  */
+.endreg:hover {
+  background: #003260;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
 /* ------------------------------------------------------ */
 /* Styling for smaller screens - generic */
 @media screen and (max-width: 780px) {
@@ -485,6 +537,22 @@
   .faq > h2 {
     font-size: 1.75rem;
     margin-bottom: 10%;
+  }
+
+  .endtitle {
+    font-size: 1.75rem;
+    margin: 5% 5%;
+  }
+
+  .enddesc {
+    font-size: 1rem;
+    margin: 5% 5%;
+  }
+
+  .endreg {
+    padding: 5% 15%;
+    border-radius: 25px;
+    margin: 10% 5%;
   }
 }
 
