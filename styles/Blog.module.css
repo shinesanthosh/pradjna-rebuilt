@@ -1,236 +1,112 @@
-@import url(https://fonts.google.com/specimen/Source+Code+Pro?category=Monospace#standard-styles);
-@import url(https://fonts.google.com/specimen/Lora?category=Serif,Display);
+/* --- The blogs page --- */
 
-.body {
-  box-sizing: border-box;
-  font-family: 'Source-Pro';
+/* The page container */
+.blog {
+  max-width: 100vw;
+  overflow: hidden;
 }
-.top a {
-  float: right;
-  padding: 10px;
-}
-.top {
-  font-family: monospace;
-}
-.logo {
-  height: 42px;
-  width: 42px;
-}
-.ul {
-  float: right;
-  margin-right: 20px;
-  padding-top: 19px;
-  padding-left: 20px 50px;
-}
-
-.ul li {
-  list-style: none;
-  margin: 0 9px;
-  display: inline-block;
-  line-height: 19px;
-  padding-left: 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.ul li a {
-  text-decoration: none;
+.blog * {
   color: #003260;
-  font-size: 19px;
 }
-.reg {
-  background-color: #003260;
-  color: white;
-  height: 45px;
-  text-decoration: none;
-  padding: 9px 25px;
-  border-radius: 50px;
+
+/* The title section including the search bar */
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.reg a {
-  color: white;
-  margin-top: -10%;
+
+/* The title */
+.titleContainer > h1 {
+  margin: 0 5%;
+  font-size: 2.5rem;
 }
-.topsearch h2 {
-  color: #003260;
-  margin-left: 40%;
-  margin-top: 3%;
-}
-.search {
-  outline: none;
-  border: none;
-  border-bottom: 2px solid #003260;
-  padding: 20px;
-  width: 10px;
-}
+
+/* The searchbar */
 .searchbar {
-  margin-left: 20%;
-}
-.cards {
-  background-color: white;
-  width: 275px;
-  height: 350px;
-  margin-left: 15%;
-  box-shadow: 5px 10px 5px 10px whitesmoke;
-  border-radius: 8px;
-}
-.cards1 {
-  background-color: white;
-  width: 275px;
-  height: 350px;
-  margin-left: 40%;
-  margin-top: -23%;
-  box-shadow: 5px 10px 5px 10px whitesmoke;
-  border-radius: 8px;
-}
-.cards2 {
-  background-color: white;
-  width: 275px;
-  height: 350px;
-  margin-left: 65%;
-  margin-top: -23%;
-  box-shadow: 5px 10px 5px 10px whitesmoke;
-  border-radius: 8px;
+  width: 60%;
+  border-bottom: 2px solid #003260;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.image {
-  background-color: lightgrey;
-  width: 260px;
-  height: 150px;
-  margin-top: 3%;
-  margin-left: 2%;
-}
-.cards h3,
-.p {
-  color: #003260;
-  font-family: sans-serif;
-  margin-left: 2%;
-}
-.cards1 h3,
-.p {
-  color: #003260;
-  font-family: sans-serif;
-  margin-left: 2%;
-}
-.cards2 h3,
-.p {
-  color: #003260;
-  font-family: sans-serif;
-  margin-left: 2%;
-}
-.bot {
-  list-style: none;
-  float: left;
-  color: #003260;
-  margin-left: 14%;
-}
-.mid {
-  color: #003260;
-  margin-bottom: 500%;
-  margin-left: 40%;
-}
-.head {
-  font-size: xx-large;
-  margin-left: 2%;
-}
-.lasti {
-  margin-left: 65%;
-  margin-top: -511%;
-  color: #003260;
-}
-.lasti p {
-  margin-left: -1%;
-}
-.gett {
-  font-size: x-large;
-  margin-left: -3px;
-}
-.subi {
-  height: 30px;
-  width: 200px;
-  border-color: #003260;
+/* Text input of the searchbar */
+.searchbar > input[type='text'] {
+  border: none;
+  outline: none;
 }
 
-.aaa {
-  color: #ffffff;
-  background-color: #003260;
-  border: 6px;
-  height: 30px;
-  width: 130px;
-  margin-left: -4px;
-}
-.copyi {
-  margin-top: 80px;
-  margin-left: 42%;
+/* The placeholder for the text input */
+
+.searchbar > input[type='text']::placeholder {
   color: #003260;
-  font-size: larger;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
 }
-.Com ul li {
-  list-style: none;
-}
-.botul ul li {
-  list-style: none;
-}
-.cards button {
-  border: none;
-  background-color: #003260;
-  outline: none;
-  color: white;
-  border-radius: 8px;
-  padding: 8px;
-  margin-top: -18%;
-  margin-left: 2%;
-  cursor: pointer;
-}
-.cards1 button {
-  border: none;
-  background-color: #003260;
-  outline: none;
-  color: white;
-  border-radius: 8px;
-  padding: 8px;
-  margin-left: 2%;
-  cursor: pointer;
-}
-.cards2 button {
-  border: none;
-  background-color: #003260;
-  outline: none;
-  color: white;
-  border-radius: 8px;
-  padding: 8px;
-  margin-left: 2%;
-  cursor: pointer;
-}
-.kk {
-  border: none;
-  margin-left: 20%;
-  outline: none;
-  width: 50%;
-  height: 10%;
-  margin-top: -150%;
-  padding: 20px 20px;
+.searchbar > input[type='text']::-webkit-input-placeholder {
   color: #003260;
-  font: #003260;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
 }
 
-.twit {
-  margin-left: 2%;
+/* The submit button */
+.searchbar > input[type='submit'] {
+  background: #003260;
+  border: 1px solid #003260;
+  border-radius: 5px;
+  color: #fff;
+  padding: 1%;
 }
-.insta {
-  margin-left: 2%;
+
+/* The posts list container */
+.postsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5%;
 }
-.mm {
-  background-color: #003260;
-  color: rgb(255, 255, 255);
-  clear: both;
-  border-radius: 4px;
-  cursor: pointer;
+
+/* Each post  */
+.post {
+  margin: 5%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  max-width: 20%;
 }
-.gg {
-  color: #003260;
-  margin-left: 6%;
-  margin-bottom: -2.1%;
-  font-size: 50px;
-  font-family: serif;
-  margin-left: 23%;
+
+/* Title image of each post */
+.post > img {
+  width: 90%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
+
+/* Title of  the post */
+.textContent > h3 {
+  font-size: 1.8rem;
+}
+
+/* Description of the post */
+.postdesc {
+  font-family: var(--font-sec);
+  margin: 10% 0;
+}
+
+/* Link to the post */
+.posturl {
+  background: #003260;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-family: var(--font-sec);
+  padding: 5%;
+  margin: 10% 0;
+  border-radius: 10px;
 }
