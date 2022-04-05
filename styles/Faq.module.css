@@ -1,0 +1,50 @@
+/* --- Styling for the FAQ section --- */
+
+/* The faq container */
+.faq {
+  border-bottom: 2px solid #003260;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+/* The qn element */
+.qn {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+/* The + icon after the qn */
+.qn:after {
+  content: '+';
+  font-size: 3rem;
+  padding: 0 5%;
+}
+
+/* The answer section */
+.ans {
+  display: none;
+  font-size: 1.2rem;
+  font-family: var(--font-sec);
+  overflow: hidden;
+}
+
+/* The - after the question */
+.expanded:after {
+  content: '-';
+  font-size: 3rem;
+  padding: 0 5%;
+}
+
+/* --- Styling for smaller screens --- */
+@media screen and (max-width: 780px) {
+  .qn {
+    font-size: 1.5rem;
+  }
+
+  .ans {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
