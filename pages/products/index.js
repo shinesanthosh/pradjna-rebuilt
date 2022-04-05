@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Menu from '../../components/menu'
 import Footer from '../../components/footer'
+import Faq from '../../components/faq'
 
 import styles from '../../styles/Products.module.css'
 
@@ -100,7 +101,6 @@ const Products = ({ workflow, products, faqs }) => {
 
       <div className={styles.workflow}>
         <h3>The Workflow</h3>
-
         <div className={styles.workflowSlider}>
           {workflow.map((workflowItem, key) => (
             <img src={workflowItem.asset.url} key={key} />
@@ -163,29 +163,11 @@ const Products = ({ workflow, products, faqs }) => {
           )
         })}
       </div>
-      <div className={styles.ques}>
-        <h1 className={styles.q}>Questions?</h1>
+      <div className={styles.faq}>
+        <h1>Questions?</h1>
+        <h2>We&apos;ve answered them!</h2>
 
-        <h2 className={styles.qa}>We&apos;ve answered them!</h2>
-
-        <input type="radio" id="radio1" name="radio" />
-        {faqs.map((faq, key) => {
-          return (
-            <div key={key}>
-              <label className={styles.faqlabel}>
-                <h3 className={styles.qb}>
-                  {faq.qn}
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                  &emsp;&emsp;&emsp;&emsp;
-                  <img className={styles.minus} src="Group 134.png" />
-                </h3>
-              </label>
-
-              <p className={styles.qp}>{faq.ans}</p>
-            </div>
-          )
-        })}
+        <Faq faqs={faqs} />
       </div>
       <div className={styles.start}>
         <h2 className={styles.starth}>Get started on your journey</h2>
@@ -201,91 +183,7 @@ const Products = ({ workflow, products, faqs }) => {
         </button>
       </div>
 
-      <div className={styles.bot}>
-        <ul className={`${styles.ul} ${styles.botul}`}>
-          <li>
-            <strong>Information</strong>
-          </li>
-
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-
-          <li>
-            <Link href="#">Services</Link>
-          </li>
-
-          <li>
-            <Link href="#">Solution</Link>
-          </li>
-
-          <li>
-            <Link href="#">FAQ</Link>
-          </li>
-
-          <li>
-            <Link href="#">Privacy Policy</Link>
-          </li>
-        </ul>
-        <ul className={`${styles.ui} ${styles.Com}`}>
-          <li>
-            <strong>Company</strong>
-          </li>
-
-          <li>
-            <Link href="/about"> About Us</Link>
-          </li>
-
-          <li>
-            <Link href="#">Contact Us</Link>
-          </li>
-
-          <li>
-            <Link href="../Journal_Template/index.html">Journal</Link>
-          </li>
-
-          <li>
-            <Link href="#">Register</Link>
-          </li>
-
-          <li>
-            <a href="#">Login</a>
-          </li>
-        </ul>
-      </div>
-      <div className={styles.mid}>
-        <h3 className={styles.head}>pradjna</h3>
-
-        <p className={styles.pp}>
-          Pradjna is a cutting edge B2B HR performance management platform
-          focused on re- engineering legacy business processes using Machine
-          Learning.
-        </p>
-
-        <a href="#">
-          <img src="Ellipse 26.png" />
-        </a>
-        <a href="#">
-          <img className={styles.twit} src="Ellipse 25.png" />
-        </a>
-        <a href="#">
-          <img className={styles.insta} src="Ellipse 27.png" />
-        </a>
-      </div>
-      <div className={styles.lasti}>
-        <h4 className={styles.gett}>Get news and updates!</h4>
-
-        <p>Learn about growing your business.</p>
-
-        <div className={styles.subii}>
-          <input className={styles.subi} type="search" id="quary" />
-          <button className={styles.aaa} value="submit">
-            SUBSCRIBE
-          </button>
-        </div>
-      </div>
-
-      <p className={styles.copyi}> Copyright © Pradjna Intellisys</p>
+      <Footer />
     </div>
   )
 }

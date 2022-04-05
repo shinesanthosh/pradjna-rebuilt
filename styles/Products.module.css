@@ -263,7 +263,7 @@
 
 /* Images in productb */
 .productb > img {
-  transform: translateY(-20%);
+  transform: translateY(-30%);
 }
 
 /* Text content of each product block */
@@ -352,6 +352,23 @@
   font-weight: normal;
   margin-top: 1em;
   font-family: var(--font-sec);
+}
+
+/* --- Faq Section ---*/
+.faq {
+  padding: 0 10%;
+}
+
+/* Title of the faq section */
+.faq > h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+/* sub title of the faq section */
+.faq > h2 {
+  font-size: 2rem;
+  margin: 0;
 }
 
 /* ------------------------------------------------------ */
@@ -454,6 +471,20 @@
     100% {
       transform: translateX(0);
     }
+  }
+
+  .faq {
+    text-align: center;
+    margin: 10% 0;
+  }
+
+  .faq > h1 {
+    font-size: 3rem;
+  }
+
+  .faq > h2 {
+    font-size: 1.75rem;
+    margin-bottom: 10%;
   }
 }
 
