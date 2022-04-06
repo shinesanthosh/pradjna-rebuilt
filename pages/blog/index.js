@@ -24,7 +24,7 @@ const Blog = ({ data }) => {
         <h1>Journal</h1>
         <form className={styles.searchbar}>
           <input type="text" placeholder="Search...." />
-          <input type="submit" value="GO" />
+          <input type="submit" value="GO" disabled />
         </form>
       </div>
       <div className={styles.postsContainer}>
@@ -36,7 +36,7 @@ const Blog = ({ data }) => {
                 <h3>{blog.title}</h3>
 
                 <p className={styles.postdesc}>
-                  {blog.body[0].children[0].text}
+                  {blog.body[0].children[0].text.substr(0, 150) + ' .....'}
                 </p>
 
                 <Link href={'/blog/' + blog.slug.current}>

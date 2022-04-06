@@ -4,6 +4,7 @@
 .blog {
   max-width: 100vw;
   overflow: hidden;
+  z-index: 2;
 }
 .blog * {
   color: #003260;
@@ -29,6 +30,7 @@
   padding: 0.25rem;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 /* Text input of the searchbar */
@@ -43,6 +45,7 @@
   color: #003260;
   font-weight: bold;
   letter-spacing: 0.025rem;
+  z-index: -1;
 }
 .searchbar > input[type='text']::-webkit-input-placeholder {
   color: #003260;
@@ -63,20 +66,22 @@
 .postsContainer {
   display: flex;
   flex-wrap: wrap;
-  margin: 5%;
+  justify-content: space-evenly;
+  margin-top: 5%;
 }
 
 /* Each post  */
 .post {
-  margin: 5%;
+  margin: 40px;
   padding: 2%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-
+  justify-content: space-around;
   border-radius: 10px;
   box-shadow: 0 0 10px #ccc;
-  max-width: 20%;
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
 }
 
 /* Title image of each post */
@@ -109,4 +114,23 @@
   padding: 5%;
   margin: 10% 0;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  .titleContainer {
+    flex-direction: column;
+  }
+
+  .searchbar {
+    margin-top: 10%;
+  }
+
+  .searchbar > input[type='submit'] {
+    font-size: 0.75rem;
+    padding: 5%;
+  }
+
+  .post {
+    padding: 8%;
+  }
 }
