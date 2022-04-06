@@ -72,6 +72,8 @@
   .menuContainer {
     justify-content: center;
     height: 10vh;
+    z-index: 10;
+    margin: 0;
   }
   .navul {
     flex-direction: column;
@@ -85,6 +87,8 @@
     align-content: space-between;
     width: 100vw;
     margin-top: 0;
+    padding: 0;
+    z-index: 4;
   }
   .logo {
     position: absolute;
@@ -98,6 +102,7 @@
     width: 10%;
     height: auto;
     max-height: 100%;
+    z-index: 5;
   }
 
   .navul > li > a {
