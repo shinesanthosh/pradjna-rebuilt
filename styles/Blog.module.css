@@ -6,7 +6,7 @@
   overflow: hidden;
   z-index: 2;
 }
-.blog * {
+.blog {
   color: #003260;
 }
 
