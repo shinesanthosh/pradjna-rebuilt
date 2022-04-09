@@ -9,7 +9,7 @@ const Menu = props => {
   return (
     <nav className={styles.menuContainer}>
       <Link href="/">
-        <img className={isOpen ? '' : styles.logo} src="logo.png" alt="Logo" />
+        <img className={isOpen ? '' : styles.logo} src="/logo.png" alt="Logo" />
       </Link>
       <img
         className={styles.ham}

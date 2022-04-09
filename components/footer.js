@@ -67,9 +67,9 @@ const Footer = () => {
           Learning.
         </p>
 
-        <img src="Ellipse 26.png" className={styles.aboutimg} />
-        <img src="Ellipse 25.png" className={styles.aboutimg} />
-        <img src="Ellipse 27.png" className={styles.aboutimg} />
+        <img src="/Ellipse 26.png" className={styles.aboutimg} />
+        <img src="/Ellipse 25.png" className={styles.aboutimg} />
+        <img src="/Ellipse 27.png" className={styles.aboutimg} />
       </div>
       <div className={styles.subscribe}>
         <h4 className={styles.substitle}>Get news and updates!</h4>
