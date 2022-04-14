@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import styles from '../styles/Login.module.css'
 import Link from 'next/link'
+import Menu from '../components/menu'
+import Footer from '../components/footer'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 
@@ -12,13 +14,11 @@ const Login = () => {
     formState: { errors },
   } = useForm()
 
-  const submitHandler = async (formData) => {
+  const submitHandler = async formData => {
     formData['csrfmiddlewaretoken'] = '3k7Jn3GeHSxQg50yxjILiesrWwRprZno'
     const params = new URLSearchParams()
 
-    for (let key in formData) 
-      params.append(key, formData[key])
-    
+    for (let key in formData) params.append(key, formData[key])
 
     axios
       .post('http://pradjna.com/login/', params, {
@@ -45,109 +45,56 @@ const Login = () => {
   }
 
   return (
-    <div className={styles.wrapper}>
-      <img className={styles.logo} src='logo (1).png' />
-      <ul>
-        <li>
-          <Link className={styles.a} href='/about'>
-            ABOUT US
-          </Link>
-        </li>
-        <li>
-          <Link className={styles.a} href='/products'>
-            PRODUCTS
-          </Link>
-        </li>
-        <li>
-          <Link className={styles.a} href='/blog'>
-            BLOG
-          </Link>
-        </li>
-        <li>
-          <Link href='/register'>
-          <button className={styles.btnji}>
-            <strong>REGISTER</strong>
-          </button></Link>
-        </li>
-        <li>
-          <Link className={styles.a} href='/login'>
-            LOGIN
-          </Link>
-        </li>
-      </ul>
-      <p className={styles.god}> LOGIN </p>
-      <p1 className={styles.godx}>
-        <b>Understand</b>
-        <br />
-        &#160;&#160;&#160;&#160; <b>Your Workforce</b>
-      </p1>
-      <br />
-      <div className={styles.login}>
-        <form className={styles.login} method='get' action='login.php'>
-          <label className={styles.label}>
-            <b>User Name</b>
-          </label>
-          <input
-            type='text'
-            name='Uname'
-            className={styles.Uname}
-            {...register('username', { required: true })}
-          />
-          {errors.username && <p>please enter a username</p>}
-          <br />
-          <br />
-          <label className={styles.label}>
-            <b>Password</b>
-          </label>
-          <input
-            type='Password'
-            name='Pass'
-            className={styles.Pass}
-            {...register('password', { required: true })}
-          />
-          {errors.password && <p>Please enter a valid password</p>}
-          <br />
-          <br />
-          <input
-            type='button'
-            name='log'
-            className={styles.log}
-            value='LOGIN'
-            onClick={handleSubmit(submitHandler)}
-          />
-          <br />
-          <br />
+    <div className={styles.login}>
+      <Menu />
+      <div className={styles.content}>
+        <div className={styles.titleContainer}>
+          <h4> LOGIN </h4>
+          <p>Understand Your Workforce</p>
+        </div>
+        <div className={styles.formContent}>
+          <form className={styles.loginForm} method="POST" action="login.php">
+            <label className={styles.label}>User Name</label>
+            <input
+              type="text"
+              name="Uname"
+              className={styles.Uname}
+              {...register('username', { required: true })}
+            />
+            {errors.username && <p>Please enter a username</p>}
 
-          <br />
-          <br />
-          <p className={styles.forgot}>
-            {' '}
-            <a className={`${styles.a} ${styles.forgot}`}  href='#'>
-              <strong>Forgot Password?</strong>{' '}
+            <label className={styles.label}>Password</label>
+            <input
+              type="Password"
+              name="Pass"
+              className={styles.Pass}
+              {...register('password', { required: true })}
+            />
+            {errors.password && <p>Please enter a valid password</p>}
+            <div className={styles.buttonContainer}>
+              <input
+                type="button"
+                name="log"
+                className={styles.loginBtn}
+                value="LOGIN"
+                onClick={handleSubmit(submitHandler)}
+              />
+              <Link href="#">
+                <a className={styles.forgot}>Forgot Password?</a>
+              </Link>
+            </div>
+          </form>
+          <Link href="/register">
+            <a className={styles.register}>
+              Don&apos;t have an account yet? Create one!
             </a>
-          </p>
-        </form>
+          </Link>
+        </div>
       </div>
-      <br />{' '}
-      <a className={`${styles.a} ${styles.link}`}  href='#'>
-        <p className={styles.dont}>Don&apos;t have an account yet? Create one!</p>
-      </a>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <p className={styles.copy}>Copyright © Pradjna Intellisys</p>
-      <img className={styles.motta} src='motta1.png' />
-      <img className={styles.motta1} src='motta1.png' />
-      <img className={styles.motta2} src='motta1.png' />
+      <p className={styles.copyright}>Copyright © Pradjna Intellisys</p>
+      <img className={styles.motta} src="motta1.png" />
+      <img className={styles.motta1} src="motta1.png" />
+      <img className={styles.motta2} src="motta1.png" />
     </div>
   )
 }

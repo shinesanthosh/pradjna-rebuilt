@@ -1,175 +1,168 @@
-
-
-.wrapper{
-    background: url(/bg.jpeg) no-repeat;
-    background-size: cover;
-    height: 100vh;
+.login {
+  max-width: 100vw;
+  overflow: hidden;
+  background: #003260;
+  display: flex;
+  flex-direction: column;
 }
 
-.logo{
-    width: 67*134;
-    height: 67px;
-    padding: 20px 100px;
+.content {
+  display: flex;
 }
 
-.wrapper ul{
-     
-    float: right;
-    margin-right: 20px;
-    padding-top: 19px;
-    padding-left: 20px 50px;
+.content > * {
+  margin: 10% 5%;
 }
 
-.wrapper ul li{
-   list-style: none;
-   margin: 0 9px;
-   display: inline-block;
-   line-height: 19px;
-   padding-left: 20px;
- 
-   
+.titleContainer {
+  color: var(--color-org);
+  width: 40%;
 }
 
-.wrapper ul li a{
- text-decoration: none;
- color: #FF775E;
- font-size: 19px;
+.titleContainer > h4 {
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
 }
 
-
-.wrapper .center{
-    position: absolute;
-    top: 15%;
-    left: 25%;
-    font-size: 15px;
-    color: #FF775E;
-    font-family: serif;
-
-}
-.god {
-
-font-family: 'Times New Roman', Times, serif;
-font-size: 25px;
-    width: 1000px;
-    margin: left;
-    height: 30;
-    color: #FF775E;
-    padding: 70px 100px;}
-
-.godx  {
-
-    width: 698px;
-    margin: left;
-    height: 134;
-    color: #FF775E;
-    padding: 70px 100px;
-    font-size: xx-large;
-    font-size: 76px;
-    letter-spacing: 2ps;
-    line-height: 5ps;
+.titleContainer > p {
+  font-size: 4.8rem;
+  font-weight: bold;
+  margin: 0;
 }
 
-
-.login{  
-        width: 382px;  
-        overflow: hidden;  
-        margin-top: -15%;  
-        margin: 20 0 0 450px;  
-        padding: 80px;  
-        background: #FF775E;  
-        border-radius: 12px ;  
-        margin-left: 65%;
-          
-}  
-  
-.label{  
-    color:#003260;  
-    font-size: 17px;  
-}  
-.Uname{  
-    width: 300px;  
-    height: 30px;  
-    border-color: #003260;  
-    border-radius: 8px;  
-    padding-left: 8px; 
-    background-color: #FF775E; 
-    
-}  
-.Pass{  
-    width: 300px;  
-    height: 30px;  
-    border-color:#003260;  
-    border-radius: 8px;  
-    padding-left: 8px; 
-    background-color: #FF775E; 
-      
-}  
-.log{  
-    width: 100px;  
-    height: 30px;  
-    border: none;  
-    border-radius: 8px;  
-    padding-left: 7px;  
-    color: #FF775E;  
-    background-color:#003260;
-    cursor: pointer;
-
-  
-  
-}  
-.forgot{
-    color: #003260;
-    margin-left: 45%;
-    margin-top: -20%;
-}  
-  
-.a{  
-    float: right;  
-    
-    
-}
-.dont{
-    margin-left: -50%;
-    color:hsl(9, 100%, 68%);
-    
-}
-.link{
-    text-decoration: none;
-}
-.copy{
-    
-    color: #FF775E;
-    margin-left: 5%;
-}
-.motta{
-    margin-left: 25%;
-    margin-top:-20%;
-    width: 20px;
-    margin-bottom: 0.7%;
-}
-.motta1{
-    margin-left: 1%;
-    margin-top:-20%;
-    width: 20px; 
-    margin-bottom: 0.7%;
-}
-.motta2{
-    margin-left: 1%;
-    margin-top:-20%;
-    width: 20px;
-    margin-bottom: 0.7%;
-}
-.btnji{
-    background-color: #FF775E;
-    color: #003260;
-    text-decoration: none;
-    padding: 9px 25px;
-    border-radius: 50px;
-    cursor:pointer;
-}
-.forgot{
-    text-decoration:none;
-    margin-top:-10%;
-    margin-left:-20%;
+.formContent {
+  width: 40%;
 }
 
+.loginForm {
+  background: var(--color-org);
+  display: flex;
+  flex-direction: column;
+  padding: 10% 10%;
+  color: #003260;
+  font-family: var(--font-sec);
+  border-radius: 30px;
+  margin-bottom: 5%;
+}
+
+.loginForm > * {
+  margin: 2% 0;
+}
+
+.loginForm input[type='text'],
+.loginForm input[type='password'] {
+  border: #003260 2px solid;
+  width: auto;
+  height: 1.5rem;
+  background: var(--color-org);
+  padding: 2% 2%;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  color: #003260;
+}
+
+.loginForm input:focus {
+  border: #0a71d1 2px solid;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+}
+
+.loginBtn {
+  border: #003260 2px solid;
+  background: #003260;
+  color: var(--color-org);
+  font-size: 1.2rem;
+  padding: 2% 5%;
+  margin-right: 2%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.loginBtn:hover {
+  background: var(--color-org);
+  color: #003260;
+}
+
+.forgot {
+  text-decoration: none;
+  color: #003260;
+  font-weight: bold;
+}
+
+.register {
+  color: var(--color-org);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: var(--font-sec);
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+}
+
+.copyright {
+  color: var(--color-org);
+  font-size: 1.5rem;
+  padding: 0 5%;
+}
+
+@media screen and (max-width: 780px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titleContainer {
+    width: 100%;
+  }
+
+  .titleContainer > h4 {
+    text-align: center;
+  }
+
+  .titleContainer > p {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 5%;
+  }
+
+  .formContent {
+    width: 80%;
+  }
+
+  .loginForm {
+    margin-bottom: 10%;
+  }
+
+  .loginForm input[type='text'],
+  .loginForm input[type='password'] {
+    width: auto;
+    height: 2rem;
+    border: 3px solid #003260;
+  }
+
+  .loginForm > * {
+    margin: 5% 0;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .buttonContainer > * {
+    margin: 5% 0;
+  }
+
+  .copyright {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
