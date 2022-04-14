@@ -124,8 +124,8 @@ const Register = () => {
                 type="checkbox"
                 {...register('conditions', { required: true })}
               />
-              {errors.conditions && <p>Please agree to the conditions</p>}
               <label>I read the terms and the conditions.</label>
+              {errors.conditions && <p>Please agree to the conditions</p>}
             </div>
             <div className={styles.buttonContainer}>
               <button

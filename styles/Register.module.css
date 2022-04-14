@@ -93,15 +93,20 @@
   font-weight: bold;
 }
 
-/* Checkbox */
+/*Tnc Checkbox */
 .terms > input {
   padding: 5%;
-  background: red;
 }
 
 /* Terms and conditons */
 .terms > label {
   font-weight: bold;
+}
+
+/*Tnc Error messsages */
+.terms > p {
+  color: #c00;
+  max-width: 100%;
 }
 
 /* Container for register and login */
