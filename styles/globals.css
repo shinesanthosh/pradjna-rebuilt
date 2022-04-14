@@ -14,4 +14,5 @@ img {
     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   --color-bl: #003260;
   --color-org: #ff775e;
+  --dev-bor: 2px solid firebrick;
 }
