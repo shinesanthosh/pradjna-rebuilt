@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import Link from 'next/link'
+import Menu from '../components/menu'
+import Footer from '../components/footer'
 import axios from 'axios'
 
 import styles from '../styles/Register.module.css'
@@ -13,7 +15,7 @@ const Register = () => {
     formState: { errors },
   } = useForm()
 
-  const submitHandler = (formData) => {
+  const submitHandler = formData => {
     formData['csrfmiddlewaretoken'] = '3k7Jn3GeHSxQg50yxjILiesrWwRprZno'
     const params = new URLSearchParams()
 
@@ -42,77 +44,45 @@ const Register = () => {
   }
 
   return (
-    <div className={styles.wrapper}>
-      <img className={styles.logo} src='logo.png'></img>
+    <div className={styles.register}>
+      <Menu />
+      <div className={styles.content}>
+        <div className={styles.titleContainer}>
+          <h4> REGISTER </h4>
+          <p>Start your transformational journey here</p>
+        </div>
 
-      <ul>
-        <li>
-          <Link href='/about'>ABOUT US</Link>
-        </li>
-        <li>
-          <Link href='/products'>PRODUCTS</Link>
-        </li>
-        <li>
-          <Link href='/blog'>BLOG</Link>
-        </li>
-        <li>
-          <button className={styles.btnji}>
-            <strong>REGISTER</strong>
-          </button>
-        </li>
-        <li>
-          <Link href='/login'>LOGIN</Link>
-        </li>
-      </ul>
-      <p className={styles.god}> REGISTER </p>
-      <p1 className={styles.godx}>
-        <b>Start your</b>
-        <br />
-        &#160;&#160;&#160;&#160; <b>transformational</b>
-      </p1>
-      <br />
-      <p3 className={styles.godz}>
-        <b>journey here</b>
-      </p3>
-
-      <div className={styles.container}>
-        <form action='#' className={styles.form}>
-          <div className={styles.userdetails}>
+        <div className={styles.formContent}>
+          <form action="#" className={styles.regForm}>
             <div className={styles.inputbox}>
-              <span className={styles.details}>First Name</span>
+              <label>First Name</label>
               <input
-                type='text'
-                placeholder='First Name'
+                type="text"
                 {...register('first_name', { required: true })}
               />
               {errors.first_name && <p>Please Check your first name</p>}
             </div>
             <div className={styles.inputbox}>
-              <span className={styles.details}>Last Name</span>
+              <label>Last Name</label>
               <input
-                type='text'
-                placeholder='Last Name'
+                type="text"
                 {...register('last_name', { required: true })}
               />
               {errors.last_name && <p>Please Check your last name</p>}
             </div>
-          </div>
 
-          <div className={styles.userdetails}>
             <div className={styles.inputbox}>
-              <span className={styles.details}>Username</span>
+              <label>Username</label>
               <input
-                type='text'
-                placeholder='Username'
+                type="text"
                 {...register('username', { required: true })}
               />
               {errors.username && <p>Please Check your Username</p>}
             </div>
             <div className={styles.inputbox}>
-              <span className={styles.details}>Email</span>
+              <label>Email</label>
               <input
-                type='text'
-                placeholder='Email'
+                type="text"
                 {...register('email', {
                   required: true,
                   pattern:
@@ -121,92 +91,65 @@ const Register = () => {
               />
               {errors.email && <p>Please Check your email</p>}
             </div>
-          </div>
-
-          <div className={styles.userdetails}>
+            <p>
+              Password should contain one Capital Letter, one Small Letter, and
+              minimum 8 charcaters
+            </p>
             <div className={styles.inputbox}>
-              <span className={styles.details}>Password </span>
+              <label>Password </label>
 
               <input
-                type='Password'
-                name='Pass'
-                id='Pass'
-                placeholder='Enter your password'
+                type="Password"
+                name="Pass"
+                id="Pass"
                 {...register('password', {
                   required: true,
                   pattern: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/,
                 })}
               />
+
+              {errors.password && <p>Please Check your Password</p>}
             </div>
-            {errors.password && (
-              <p>
-                Please Check your Password, it should contain one Capital
-                Letter, one Small Letter, and minimum 8 charcaters
-              </p>
-            )}
             <div className={styles.inputbox}>
-              <label className={styles.details}>Confirm Password</label>
+              <label>Confirm Password</label>
               <input
-                type='password'
-                placeholder='Confirm your password'
+                type="password"
                 {...register('password2', { required: true })}
               />
               {errors.password2 && <p>{errors.password2.message}</p>}
             </div>
-          </div>
+            <div className={styles.terms}>
+              <input
+                className={styles.checkbod}
+                type="checkbox"
+                {...register('conditions', { required: true })}
+              />
+              {errors.conditions && <p>Please agree to the conditions</p>}
+              <label>I read the terms and the conditions.</label>
+            </div>
+            <div className={styles.buttonContainer}>
+              <button
+                className={styles.regBtn}
+                onClick={handleSubmit(submitHandler)}
+              >
+                REGISTER
+              </button>
 
-          <input
-            className={styles.checkbod}
-            type='checkbox'
-            {...register('conditions', { required: true })}
-          />
-          {errors.conditions && <p>Please agree to the conditions</p>}
-          <label className={styles.containers}>
-            <strong>I read terms and condition.</strong>
-          </label>
-          <span className={styles.checkmark}></span>
-          <h1>
-            <br />
-            <button
-              className={styles.btnprimary}
-              onClick={handleSubmit(submitHandler)}>
-              REGISTER
-            </button>
-          </h1>
-          <h2 className={styles.jemi}>
-            <a className={styles.demo} href='#'>
-              Need a demo? Book here!
-            </a>
-          </h2>
+              <Link href="#">
+                <a className={styles.demo}>Need a demo? Book here!</a>
+              </Link>
+            </div>
+          </form>
 
-          <br />
-          <h3 className={styles.indru}>
-            <Link className={styles.acc} href='/login'>
-              Have an account already? Login here!
-            </Link>
-          </h3>
-        </form>
+          <Link href="/login">
+            <a className={styles.login}>Have an account already? Login here!</a>
+          </Link>
+        </div>
       </div>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <p className={styles.copy}>Copyright © Pradjna Intellisys</p>
-      <img className={styles.motta} src='motta1.png' />
-      <img className={styles.motta1} src='motta1.png' />
-      <img className={styles.motta2} src='motta1.png'></img>
+      <p className={styles.copyright}>Copyright © Pradjna Intellisys</p>
+      <img className={styles.motta} src="motta1.png" />
+      <img className={styles.motta1} src="motta1.png" />
+      <img className={styles.motta2} src="motta1.png"></img>
     </div>
   )
 }

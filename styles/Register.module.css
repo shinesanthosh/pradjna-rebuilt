@@ -1,200 +1,220 @@
-.wrapper {
-  background: url(/bg.jpeg) no-repeat;
-  background-size: cover;
-  height: 100vh;
+/* --- The register page ---*/
+.register {
+  max-width: 100vw;
+  overflow: hidden;
+  background: #003260;
+  display: flex;
+  flex-direction: column;
 }
 
-.logo {
-  width: 67 * 134;
-  height: 107px;
-  padding: 20px 100px;
+/* The content after the navbar */
+.content {
+  display: flex;
+  align-items: center;
+}
+.content > * {
+  margin: 5% 5%;
 }
 
-.wrapper ul {
-  float: right;
-  margin-right: 20px;
-  padding-top: 19px;
-  padding-left: 20px 50px;
+/* Title container */
+.titleContainer {
+  color: var(--color-org);
+  width: 40%;
 }
 
-.wrapper ul li {
-  list-style: none;
-  margin: 0 9px;
-  display: inline-block;
-  line-height: 19px;
-  padding-left: 20px;
+/* Main title */
+.titleContainer > h4 {
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
 }
 
-.wrapper ul li a {
-  text-decoration: none;
-  color: #ff775e;
-  font-size: 19px;
+/* sub title */
+.titleContainer > p {
+  font-size: 4.8rem;
+  font-weight: bold;
+  margin: 0;
 }
 
-.wrapper .center {
-  position: absolute;
-  top: 15%;
-  left: 25%;
-  font-size: 15px;
-  color: #ff775e;
-  font-family: serif;
-}
-.god {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 25px;
-  width: 1000px;
-  margin: left;
-  height: 30;
-  color: #ff775e;
-  padding: 70px 100px;
-}
-.godx {
-  width: 698px;
-  margin: left;
-  height: 134;
-  color: #ff775e;
-  padding: 70px 100px;
-  font-size: xx-large;
-  font-size: 76px;
-  letter-spacing: 2ps;
-  line-height: 5ps;
+/* Form container */
+.formContent {
+  width: 40%;
 }
 
-.godz {
-  width: 698px;
-  margin: left;
-  height: 134;
-  color: #ff775e;
-  padding: 70px 100px;
-  font-size: xx-large;
-  font-size: 76px;
-  letter-spacing: 2ps;
-  line-height: 5ps;
-}
-
-.container {
-  max-width: 650px;
-  width: 650px;
-  height: 490px;
-  background: #ff775e;
-  padding: 50px 75px;
-  border-radius: 20px;
-  margin-left: 55%;
-  margin-top: -20%;
-}
-.container .title {
-  font-size: 25px;
-  font-family: 500;
-  position: relative;
-}
-.container.title::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 40px;
-  background: linear-gradient(#003260, 135deg);
-}
-.container .form .userdetails {
+/* registration form */
+.regForm {
+  background: var(--color-org);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20px 0 12px 0;
+  padding: 10% 8%;
+  color: #003260;
+  font-family: var(--font-sec);
+  border-radius: 30px;
+  margin-bottom: 5%;
 }
-.form .userdetails.inputbox {
-  margin-bottom: 15px;
-  width: calc(100% / 2 - 20px);
+
+.regForm > * {
+  margin: 2% 0;
 }
-.userdetails .inputbox .details {
-  display: block;
-  font-weight: 500;
-  margin-bottom: 5px;
-  margin-left: -20%;
-}
-.userdetails .inputbox input {
-  height: 45px;
-  width: 150%;
-  outline: #003260;
-  border-radius: 7px;
-  border: 2px solid #003260;
-  background: #ff775e;
-  margin-left: -20%;
-  margin-right: -25%;
-  font-display: left;
-}
+
+/* Container for input groups */
 .inputbox {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  margin-right: 2%;
+  margin-bottom: 5%;
+}
+
+/* Error messsages */
+.inputbox > p {
+  color: #c00;
+  max-width: 100%;
+}
+
+/* Input elements */
+.inputbox > input {
+  border: #003260 2px solid;
+  width: auto;
+  height: 1.8rem;
+  background: var(--color-org);
+  padding: 2% 2%;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 1.3rem;
+  color: #003260;
+}
+.inputbox > input:focus {
+  border: #0a71d1 2px solid;
+}
+
+/* Label for inputs */
+.inputbox > label {
+  font-weight: bold;
+}
+
+/* Checkbox */
+.terms > input {
+  padding: 5%;
+  background: red;
+}
+
+/* Terms and conditons */
+.terms > label {
+  font-weight: bold;
+}
+
+/* Container for register and login */
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 5%;
+}
+
+/* Register button */
+.regBtn {
+  border: #003260 2px solid;
+  background: #003260;
+  color: var(--color-org);
+  font-size: 1.2rem;
+  padding: 2% 5%;
+  margin-right: 2%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.regBtn:hover {
+  background: var(--color-org);
   color: #003260;
 }
 
-.containers {
-  background-color: #ff775e;
-  color: #003260;
-}
-.checkbod {
-  margin-bottom: -30px;
-  margin-left: -30px;
-  margin-top: 30px;
-}
-.btnprimary {
-  text-decoration: none;
-  background-color: #003260;
-  color: #ff775e;
-  padding: 6px 8px;
-  border: none;
-  border-radius: 6px;
-  width: 100px;
-  height: 40px;
-  margin-left: -30px;
-  cursor: pointer;
-}
-.jemi {
-  color: #003260;
-  margin-left: 130px;
-  margin-top: -30px;
-  font-size: 18px;
-}
-.indru {
-  color: #ff775e;
-  margin-left: 56%;
-}
-.copy {
-  color: #ff775e;
-  margin-left: 5%;
-  margin-top: -18%;
-}
-.motta {
-  margin-left: 25%;
-  margin-top: -20%;
-  width: 20px;
-  margin-bottom: 0.7%;
-}
-.motta1 {
-  margin-left: 1%;
-  margin-top: -20%;
-  width: 20px;
-  margin-bottom: 0.7%;
-}
-.motta2 {
-  margin-left: 1%;
-  margin-top: -20%;
-  width: 20px;
-  margin-bottom: 0.7%;
-}
-.btnji {
-  background-color: #ff775e;
-  color: #003260;
-  text-decoration: none;
-  padding: 9px 25px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-.acc {
-  text-decoration: none;
-  color: #ff775e;
-}
+/* demo link */
 .demo {
   text-decoration: none;
   color: #003260;
+  font-weight: bold;
+}
+
+/* login link */
+.login {
+  color: var(--color-org);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: var(--font-sec);
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+}
+
+/* Copyright at the bottom */
+.copyright {
+  color: var(--color-org);
+  font-size: 1.5rem;
+  padding: 0 5%;
+}
+
+@media screen and (max-width: 780px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titleContainer {
+    width: 100%;
+  }
+
+  .titleContainer > h4 {
+    text-align: center;
+  }
+
+  .titleContainer > p {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 5%;
+  }
+
+  .formContent {
+    width: 80%;
+  }
+
+  .regForm {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .loginForm {
+    margin-bottom: 10%;
+  }
+
+  .inputbox {
+    width: 100%;
+  }
+
+  .inputbox > input {
+    width: auto;
+    height: 2rem;
+    border: 3px solid #003260;
+    margin-bottom: 2%;
+  }
+  .inputbox > label {
+    margin-bottom: 2%;
+  }
+
+  .regForm > * {
+    margin: 5% 0;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .buttonContainer > * {
+    margin: 5% 0;
+  }
+
+  .copyright {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
