@@ -13,7 +13,10 @@ const Slider = ({ data }) => {
   let dotArray = []
   for (let i = 0; i <= maxPos; i++)
     dotArray.push(
-      <div className={`${styles.dot} ${i == pos ? styles.dotActive : ''}`} key={i} >
+      <div
+        className={`${styles.dot} ${i == pos ? styles.dotActive : ''}`}
+        key={i}
+      >
         {' '}
       </div>
     )
@@ -28,9 +31,7 @@ const Slider = ({ data }) => {
         <div className={styles.sliderControl}>
           <div className={styles.controls}>
             <div
-              className={`${styles.prevBtn} ${styles.button} ${
-                pos != 0 ? '' : styles.disBtn
-              }`}
+              className={styles.button}
               onClick={() => {
                 posChangeHandler(false)
               }}
@@ -39,9 +40,7 @@ const Slider = ({ data }) => {
             </div>
 
             <div
-              className={`${styles.nextBtn} ${
-                pos >= maxPos ? styles.disBtn : ''
-              } ${styles.button}`}
+              className={styles.button}
               onClick={() => {
                 posChangeHandler(true)
               }}

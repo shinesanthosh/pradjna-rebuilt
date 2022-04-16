@@ -1,47 +1,55 @@
+/* The slider component */
 .slider {
   width: 100%;
   display: flex;
-  /* flex-wrap: wrap; */
   padding: 0 5%;
   color: #003260;
 }
 
+/* Image inside the slider */
 .slider > img {
   width: 60%;
 }
 
+/* Div containing the captions and the buttons */
 .textNControl {
   padding: 0 2%;
   max-width: 30%;
 }
 
+/* Captions div */
 .captions {
   width: 75%;
 }
 
+/* Main title of the image */
 .captions > h5 {
   margin: 0;
   font-size: 1.5rem;
   transition: 0.3s;
 }
 
+/* The description of the image */
 .captions > p {
   font-family: var(--font-sec);
   font-size: 1rem;
   margin: 10% 0;
 }
 
+/* Div controls the control buttons and the postion dots */
 .sliderControl {
   display: flex;
   flex-direction: column;
 }
 
+/* Control buttond container */
 .controls {
   display: flex;
   align-items: center;
   height: 2rem;
 }
 
+/* The control buttons */
 .controls > .button {
   height: 2.5rem;
   line-height: 2.5rem;
@@ -58,21 +66,18 @@
   transition: 0.1s;
   border: 1px solid #003260;
 }
-
 .button:active {
   color: #003260;
   background: #fff;
 }
 
-.disBtn {
-  background: #999;
-}
-
+/* Container for the postion dots */
 .dotContainer {
   display: flex;
   margin-top: 5%;
 }
 
+/* Seperate posiion indicator dots */
 .dot {
   height: 1.2rem;
   line-height: 1.2rem;
@@ -90,6 +95,7 @@
   border: 1px solid #003260;
 }
 
+/* The current selected dot */
 .dotActive {
   background: #fff;
 }
