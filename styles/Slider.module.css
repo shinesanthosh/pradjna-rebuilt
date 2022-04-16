@@ -1,0 +1,95 @@
+.slider {
+  width: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding: 0 5%;
+  color: #003260;
+}
+
+.slider > img {
+  width: 60%;
+}
+
+.textNControl {
+  padding: 0 2%;
+  max-width: 30%;
+}
+
+.captions {
+  width: 75%;
+}
+
+.captions > h5 {
+  margin: 0;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.captions > p {
+  font-family: var(--font-sec);
+  font-size: 1rem;
+  margin: 10% 0;
+}
+
+.sliderControl {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+
+.controls > .button {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  width: 2.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 50%;
+  background: #003260;
+  font-weight: bold;
+  color: white;
+  margin-right: 2%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.1s;
+  border: 1px solid #003260;
+}
+
+.button:active {
+  color: #003260;
+  background: #fff;
+}
+
+.disBtn {
+  background: #999;
+}
+
+.dotContainer {
+  display: flex;
+  margin-top: 5%;
+}
+
+.dot {
+  height: 1.2rem;
+  line-height: 1.2rem;
+  width: 1.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 50%;
+  background: #003260;
+  font-weight: bold;
+  color: white;
+  margin-right: 3%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #003260;
+}
+
+.dotActive {
+  background: #fff;
+}
