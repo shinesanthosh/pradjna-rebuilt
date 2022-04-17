@@ -1,6 +1,7 @@
 import React from 'react'
 import Menu from '../components/menu'
 import Slider from '../components/aboutSlider'
+import Faq from '../components/faq'
 
 import styles from '../styles/About.module.css'
 
@@ -26,85 +27,48 @@ const About = ({ members, faqs, titleSlider }) => {
     <div className={styles.about}>
       <Menu mode={2} />
       <Slider data={titleSlider} />
-      <strong>
-        {' '}
-        <h1 className={styles.ggy}>About Us</h1>
-        <br />
-        <br />
-      </strong>
-      <p className={styles.bbi}>
-        Pradjna is a cloud based platform which uses a revolutionary machine
-        learning engine to evaluate
-        <br />
-        &#8200; &#8200; human motor skills. Currently we are prioritizing
-        driving skills; but the engine can handle other
-        <br />
-        &#8200; &#8200; &#8200; &#8200; &#8200; &#8200; &#8200; &#8200; &#8200;
-        &#8200; &#8200; &#8200; motor skills like welding, industrial painting,
-        machining etc.
-      </p>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      {faqs.map((faq, key) => (
-        <div key={key}>
-          <p className={styles.hjk}>{faq.qn}</p>{' '}
-          <p className={styles.mmm}>{faq.ans}</p>
-          <img className={styles.im} src="Group 134.png" />
-        </div>
-      ))}
+      <div className={styles.titleContainer}>
+        <h1>About Us</h1>
+        <p>
+          Pradjna is a cloud based platform which uses a revolutionary machine
+          learning engine to evaluate human motor skills. Currently we are
+          prioritizing driving skills; but the engine can handle other motor
+          skills like welding, industrial painting, machining etc.
+        </p>
+      </div>
+      <div className={styles.faqContainer}>
+        <Faq faqs={faqs} />
+      </div>
       <h1 className={styles.zz1}></h1>
-      <br />
-      <br />
-      <br />
-      <br />
       <strong>
         {' '}
         <h1 className={styles.cc}>Our Team</h1>
       </strong>
-      <br />
-      <br />
       <div className={styles.team}>
         {members.map((member, key) => (
           <div className={styles.member} key={key}>
             <img src={member.image.asset.url} />
             <span>{member.mname}</span>
-            <br />
+
             <span>{member.pos}</span>
-            <br />
+
             <span>{member.linked}</span>
-            <br />
           </div>
         ))}
       </div>
-      <br />
       <div>
-        &#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;&#8200;{' '}
+        {' '}
         <img className={styles.abm} src="Group 178.png" />
         <img className={styles.abm} src="Group 178.png" />
         <img className={styles.abm} src="Group 178.png" />{' '}
       </div>
-      <br />
-      <br />
       <strong>
         <p className={styles.ffw}>Let&apos;s talk</p>
       </strong>
-      <br />
-      <br />
       <label className={`${styles.ss} ${styles.label}`}>Name</label>
       <input className={styles.input} type="email" id="email" size="30" />
-      <br />
-      <br />
-      <br />
       <label className={`${styles.ss} ${styles.label}`}>Email</label>
       <input className={styles.input} type="email" id="email" size="30" />
-      <br />
-      <br />
-      <br />
       <label className={`${styles.ssg} ${styles.label}`}>Message</label>
       <input
         className={`${styles.input} ${styles.sss}`}
@@ -112,26 +76,16 @@ const About = ({ members, faqs, titleSlider }) => {
         id="email"
         size="30"
       />{' '}
-      <br />
-      <br />
-      <br />
       <input className={styles.input} type="submit" value="Send" />
       <h1 className={styles.ere}>Visit Us</h1>
-      <br />
-      <br />
       <p className={styles.fzz}>
-        Any time between Monday-Friday 9:30am to
-        <br /> 5:30pm at
+        Any time between Monday-Friday 9:30am to 5:30pm at
       </p>
-      <br />
       <strong>
         <p className={styles.jem}>Pradjna Intellisys Pvt. Ltd.</p>
       </strong>
-      <br />
       <p className={styles.jei}>
-        Maker Village, IIIT-MK Building, Technopark, Kerala
-        <br />
-        695581
+        Maker Village, IIIT-MK Building, Technopark, Kerala 695581
       </p>
       <div className={styles.contactmap}>
         <iframe
@@ -143,73 +97,57 @@ const About = ({ members, faqs, titleSlider }) => {
           loading="lazy"
         ></iframe>
       </div>
-      <br />
-      <br />
-      <br />
       <img className={styles.lstimg} src="Group 182.png" />
-      <br />
-      <br />
-      <br />
       <div>
         <ul className={styles.bot}>
-          <br />
           <li>
             <strong>Information</strong>
           </li>
-          <br />
-          <br />
+
           <li>Home</li>
-          <br />
+
           <li>Services</li>
-          <br />
+
           <li>Solution</li>
-          <br />
+
           <li>FAQ</li>
-          <br />
+
           <li>Privacy Policy</li>
         </ul>
         <ul className={styles.com}>
-          <br />
           <li>
             <strong>Company</strong>
           </li>
-          <br />
-          <br />
+
           <li>About Us</li>
-          <br />
+
           <li>Contact Us</li>
-          <br />
+
           <li>Journal</li>
-          <br />
+
           <li>Register</li>
-          <br />
+
           <li>Login</li>
-          <br />
         </ul>
       </div>
       <div className={styles.mid}>
-        <br />
-        <br />
         <h3 className={styles.head}>pradjna</h3>
-        <br />
+
         <p className={styles.pp}>
-          Pradjna is a cutting edge B2B HR performance
-          <br /> management platform focused on re-
-          <br />
-          engineering legacy business processes using <br />
-          Machine Learning.
+          Pradjna is a cutting edge B2B HR performance management platform
+          focused on re- engineering legacy business processes using Machine
+          Learning.
         </p>
-        <br />
+
         <img src="Ellipse 26.png" />
         <img src="Ellipse 25.png" />
         <img src="Ellipse 27.png" />
-        <br />
       </div>
       <div className={styles.lasti}>
         <h4 className={styles.gett}>Get news and updates!</h4>
-        <br />
+
         <p>Learn about growing your business.</p>
-        <br />
+
         <div className={styles.subii}>
           <input className={styles.subi} type="search" id="quary" />
           <button className={styles.aaa} value="submit">

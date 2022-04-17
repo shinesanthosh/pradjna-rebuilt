@@ -2,4 +2,48 @@
 .about {
   max-width: 100vw;
   overflow: hidden;
+  color: #003260;
+}
+
+/* The title container */
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  padding: 0 10%;
+}
+
+/* The main title */
+.titleContainer > h1 {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+/* The sub title or the title description */
+.titleContainer > p {
+  text-align: center;
+  font-family: var(--font-sec);
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+
+/* Container for the faq component */
+.faqContainer {
+  margin: 5% 0;
+  padding: 0 10%;
+}
+
+/* --- Styling for smaller screens- generic */
+@media screen and (max-width: 780px) {
+  .titleContainer {
+    padding: 0 5%;
+  }
+
+  .titleContainer > h1 {
+    font-size: 2.5rem;
+  }
+
+  .titleContainer > p {
+    font-size: 1.2rem;
+  }
 }
