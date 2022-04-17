@@ -1,5 +1,6 @@
 import React from 'react'
 import Menu from '../components/menu'
+import Footer from '../components/footer'
 import Slider from '../components/aboutSlider'
 import Faq from '../components/faq'
 import Link from 'next/link'
@@ -58,106 +59,42 @@ const About = ({ members, faqs, titleSlider }) => {
           ))}
         </div>
       </div>
-      <div>
-        {' '}
-        <img className={styles.abm} src="Group 178.png" />
-        <img className={styles.abm} src="Group 178.png" />
-        <img className={styles.abm} src="Group 178.png" />{' '}
-      </div>
-      <strong>
-        <p className={styles.ffw}>Let&apos;s talk</p>
-      </strong>
-      <label className={`${styles.ss} ${styles.label}`}>Name</label>
-      <input className={styles.input} type="email" id="email" size="30" />
-      <label className={`${styles.ss} ${styles.label}`}>Email</label>
-      <input className={styles.input} type="email" id="email" size="30" />
-      <label className={`${styles.ssg} ${styles.label}`}>Message</label>
-      <input
-        className={`${styles.input} ${styles.sss}`}
-        type="email"
-        id="email"
-        size="30"
-      />{' '}
-      <input className={styles.input} type="submit" value="Send" />
-      <h1 className={styles.ere}>Visit Us</h1>
-      <p className={styles.fzz}>
-        Any time between Monday-Friday 9:30am to 5:30pm at
-      </p>
-      <strong>
-        <p className={styles.jem}>Pradjna Intellisys Pvt. Ltd.</p>
-      </strong>
-      <p className={styles.jei}>
-        Maker Village, IIIT-MK Building, Technopark, Kerala 695581
-      </p>
-      <div className={styles.contactmap}>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d878.7380009011521!2d76.90230792691472!3d8.557436889531646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bedb3f2eaaab%3A0xe85b8f58f4029682!2sPradjna%20Intellisys!5e0!3m2!1sen!2sin!4v1642671054215!5m2!1sen!2sin"
-          width="600"
-          height="450"
-          styles={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
-      </div>
-      <img className={styles.lstimg} src="Group 182.png" />
-      <div>
-        <ul className={styles.bot}>
-          <li>
-            <strong>Information</strong>
-          </li>
 
-          <li>Home</li>
+      <div className={styles.contact}>
+        <form className={styles.contactForm}>
+          <h2>Let&apos;s talk</h2>
+          <label>Name</label>
+          <input type="text" name="name" required />
+          <label>Email</label>
+          <input type="email" name="email" required />
+          <label>Message</label>
+          <textarea
+            className={styles.messageInput}
+            name="message"
+            rows={3}
+            required
+          />
+          <input type="submit" value="Send" />
+        </form>
+        <div className={styles.address}>
+          <h4>Visit Us</h4>
+          <div className={styles.time}>
+            <p>Any time between Monday-Friday 9:30am to 5:30pm at</p>
+          </div>
+          <p>
+            <b>Pradjna Intellisys Pvt. Ltd.</b>
+          </p>
 
-          <li>Services</li>
+          <p>Maker Village, IIIT-MK Building, Technopark, Kerala 695581</p>
 
-          <li>Solution</li>
-
-          <li>FAQ</li>
-
-          <li>Privacy Policy</li>
-        </ul>
-        <ul className={styles.com}>
-          <li>
-            <strong>Company</strong>
-          </li>
-
-          <li>About Us</li>
-
-          <li>Contact Us</li>
-
-          <li>Journal</li>
-
-          <li>Register</li>
-
-          <li>Login</li>
-        </ul>
-      </div>
-      <div className={styles.mid}>
-        <h3 className={styles.head}>pradjna</h3>
-
-        <p className={styles.pp}>
-          Pradjna is a cutting edge B2B HR performance management platform
-          focused on re- engineering legacy business processes using Machine
-          Learning.
-        </p>
-
-        <img src="Ellipse 26.png" />
-        <img src="Ellipse 25.png" />
-        <img src="Ellipse 27.png" />
-      </div>
-      <div className={styles.lasti}>
-        <h4 className={styles.gett}>Get news and updates!</h4>
-
-        <p>Learn about growing your business.</p>
-
-        <div className={styles.subii}>
-          <input className={styles.subi} type="search" id="quary" />
-          <button className={styles.aaa} value="submit">
-            SUBSCRIBE
-          </button>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d878.7380009011521!2d76.90230792691472!3d8.557436889531646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bedb3f2eaaab%3A0xe85b8f58f4029682!2sPradjna%20Intellisys!5e0!3m2!1sen!2sin!4v1642671054215!5m2!1sen!2sin"
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
-      <p className={styles.copyi}> Copyright © Pradjna Intellisys</p>
+      <Footer />
     </div>
   )
 }

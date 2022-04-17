@@ -103,6 +103,89 @@
   color: #003260;
 }
 
+/* --- The contact section containing the contact form and adress */
+.contact {
+  display: flex;
+  width: 100%;
+  margin: 10% 0;
+}
+
+/* The contact form in the contact section */
+.contactForm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+}
+
+/* Title of the form */
+.contactForm > h2 {
+  font-size: 3rem;
+}
+
+/* Labels in the form */
+.contactForm > label {
+  font-size: 1.2rem;
+}
+
+/* Input fields in the form */
+.contactForm > input,
+.contactForm > textarea {
+  border: 2px solid #003260;
+  font-size: 2rem;
+  padding: 2%;
+  color: #003260;
+  border-radius: 10px;
+  margin: 2% 0;
+}
+
+/* The message input areaa */
+.messageInput {
+  column-span: 5;
+}
+
+/* Submit button */
+.contactForm > input[type='submit'] {
+  width: 50%;
+  color: #fff;
+  background: #003260;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contactForm > input[type='submit']:hover {
+  background: #fff;
+  color: #003260;
+}
+
+/* Address part of the contact section */
+.address {
+  width: 50%;
+}
+
+/* Title of the address section */
+.address > h4 {
+  font-size: 2.5rem;
+}
+
+/* The address part */
+.address > p {
+  font-family: var(--font-sec);
+  font-size: 1.2rem;
+}
+
+/* The visiing time part */
+.time {
+  margin: 10% 0;
+  font-family: var(--font-sec);
+  font-size: 1.2rem;
+}
+
+/* The location map */
+.address > iframe {
+  border: 0;
+  width: 80%;
+}
+
 /* --- Styling for smaller screens- generic */
 @media screen and (max-width: 780px) {
   .titleContainer {
@@ -119,5 +202,33 @@
 
   .team {
     align-items: center;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contactForm {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+  }
+
+  .contactForm > input {
+    width: 80%;
+  }
+
+  .contactForm > textarea {
+    width: 80%;
+  }
+
+  .address {
+    width: 100%;
+    margin: 5%;
+    width: 90%;
+  }
+
+  .address > iframe {
+    width: 100%;
   }
 }
