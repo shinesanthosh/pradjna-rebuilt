@@ -33,6 +33,76 @@
   padding: 0 10%;
 }
 
+/* --- The team section ---*/
+.team {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+}
+
+/* Team section title */
+.team > h1 {
+  font-size: 3.2rem;
+}
+
+/* The members container */
+.membersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Member objects */
+.member {
+  width: 300px;
+  height: 400px;
+  background: var(--color-org);
+  margin-top: 5%;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2%;
+}
+
+/* Image inside the member component */
+.member > img {
+  width: 50%;
+  object-fit: cover;
+}
+
+/* Name of the member */
+.member > h5 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Position of the member */
+.member > h6 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* The social link of the member */
+.member > a {
+  text-decoration: none;
+  background: #003260;
+  font-family: var(--font-sec);
+  font-weight: bold;
+  color: #fff;
+  padding: 2% 5%;
+  border-radius: 5px;
+  border: 1px solid #003260;
+  transition: 0.3s;
+}
+.member > a:hover {
+  background: var(--color-org);
+  color: #003260;
+}
+
 /* --- Styling for smaller screens- generic */
 @media screen and (max-width: 780px) {
   .titleContainer {
@@ -45,5 +115,9 @@
 
   .titleContainer > p {
     font-size: 1.2rem;
+  }
+
+  .team {
+    align-items: center;
   }
 }

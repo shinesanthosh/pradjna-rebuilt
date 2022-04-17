@@ -2,6 +2,7 @@ import React from 'react'
 import Menu from '../components/menu'
 import Slider from '../components/aboutSlider'
 import Faq from '../components/faq'
+import Link from 'next/link'
 
 import styles from '../styles/About.module.css'
 
@@ -39,22 +40,23 @@ const About = ({ members, faqs, titleSlider }) => {
       <div className={styles.faqContainer}>
         <Faq faqs={faqs} />
       </div>
-      <h1 className={styles.zz1}></h1>
-      <strong>
-        {' '}
-        <h1 className={styles.cc}>Our Team</h1>
-      </strong>
       <div className={styles.team}>
-        {members.map((member, key) => (
-          <div className={styles.member} key={key}>
-            <img src={member.image.asset.url} />
-            <span>{member.mname}</span>
+        <h1>Our Team</h1>
 
-            <span>{member.pos}</span>
+        <div className={styles.membersContainer}>
+          {members.map((member, key) => (
+            <div className={styles.member} key={key}>
+              <img src={member.image.asset.url} />
+              <h5>{member.mname}</h5>
 
-            <span>{member.linked}</span>
-          </div>
-        ))}
+              <h6>{member.pos}</h6>
+
+              <Link href={member.linked}>
+                <a target="_blank">LinkedIn</a>
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
       <div>
         {' '}
