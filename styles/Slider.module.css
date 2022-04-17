@@ -99,3 +99,45 @@
 .dotActive {
   background: #fff;
 }
+
+@media screen and (max-width: 780px) {
+  .slider {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .slider > img {
+    width: 100%;
+    margin: 5% 0;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+  .textNControl {
+    max-width: 100%;
+    padding: 0 5%;
+  }
+
+  .captions {
+    height: 20vh;
+  }
+
+  .sliderControl {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .controls {
+    width: 30%;
+  }
+
+  .dotContainer {
+    width: 70%;
+    height: 1.2rem;
+    margin-top: 0;
+    justify-content: center;
+  }
+}
