@@ -186,6 +186,42 @@
   width: 80%;
 }
 
+/* Connect with us section */
+.connect {
+  width: 100vw;
+  background: var(--color-org);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 0;
+  border-bottom: 1rem solid #003260;
+}
+
+/* title of the connect section */
+.connect > h3 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Connect info flexbox */
+.connectInfo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+/* Links in the connect section */
+.connectInfo > * {
+  color: #003260;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: var(--font-sec);
+  margin: 0 2%;
+}
+
 /* --- Styling for smaller screens- generic */
 @media screen and (max-width: 780px) {
   .titleContainer {
@@ -230,5 +266,17 @@
 
   .address > iframe {
     width: 100%;
+  }
+
+  .connect > h3 {
+    font-size: 2rem;
+  }
+
+  .connect {
+    border-bottom: 2rem solid #003260;
+  }
+
+  .connectInfo > * {
+    font-size: 1rem;
   }
 }

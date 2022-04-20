@@ -94,6 +94,16 @@ const About = ({ members, faqs, titleSlider }) => {
           ></iframe>
         </div>
       </div>
+
+      <div className={styles.connect}>
+        <h3> Connect with us </h3>
+        <div className={styles.connectInfo}>
+          <Link href="tel:+918921279336">+91 892 127 9336</Link>
+          <span> | </span>
+          <Link href="mailto:info@pradjna.com">info@pradjna.com</Link>
+        </div>
+      </div>
+
       <Footer />
     </div>
   )
