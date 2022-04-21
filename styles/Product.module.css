@@ -83,6 +83,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 5%;
 }
 
 /* "UseCases" title */
@@ -126,4 +127,57 @@
   margin-top: 10%;
   font-family: var(--font-sec);
   font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* Styling for smaller screens - generic */
+@media screen and (max-width: 780px) {
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .titleDesc {
+    font-size: 1rem;
+  }
+
+  .features > h2 {
+    text-align: center;
+  }
+
+  .featureList {
+    flex-direction: column;
+  }
+
+  .featureList > li {
+    width: 100%;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
+
+  .useCases {
+    margin-bottom: 10%;
+  }
+
+  .useCases > h3 {
+    text-align: center;
+  }
+
+  .useCasesList {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .useCase {
+    width: 80%;
+    margin: 2% 5%;
+    padding: 5%;
+  }
+
+  .useCase > a {
+    text-align: left;
+    font-size: 1rem;
+  }
 }
