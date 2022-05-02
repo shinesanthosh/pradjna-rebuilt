@@ -144,7 +144,7 @@ const Products = ({ workflow, products, faqs }) => {
                           {useCase.title}
 
                           <Link
-                            href={`/products/usecases/${useCase.slug.current}`}
+                            href={`/products/${product.id.current}/${useCase.slug.current}`}
                           >
                             <a className={styles.useCaseLink}>
                               LEARN MORE &gt;

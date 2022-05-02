@@ -40,11 +40,20 @@ export const getStaticProps = async ({ params }) => {
       description: data.result[0].description,
       body: data.result[0].body,
       useCases: data.result[0].useCases,
+      id: params.product,
     },
   }
 }
 
-const Product = ({ title, image, features, description, body, useCases }) => {
+const Product = ({
+  title,
+  image,
+  features,
+  description,
+  body,
+  useCases,
+  id,
+}) => {
   return (
     <div className={styles.product}>
       <Menu mode={2} />
@@ -78,7 +87,7 @@ const Product = ({ title, image, features, description, body, useCases }) => {
 
               <Link
                 className={styles.learn}
-                href={`/products/usecases/${useCase.slug.current}`}
+                href={`/products/${id}/${useCase.slug.current}`}
               >
                 LEARN MORE &gt;
               </Link>
