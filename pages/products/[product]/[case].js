@@ -26,7 +26,7 @@ export const getStaticPaths = async () => {
     })
   }
 
-  paths.push({ params: { product: 'dishku', case: 'dinku' } })
+ 
 
   return {
     paths,
