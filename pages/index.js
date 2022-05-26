@@ -1,5 +1,5 @@
 import ReactPlayer from 'react-player'
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 import styles from '../styles/Home.module.css'
 import Menu from '../components/menu'
@@ -32,6 +32,16 @@ const formatName = str => {
 
 export default function Home({ clients, partners, testimonials, titleSlider }) {
   const [isPlaying, setIsPlaying] = useState(false)
+
+  const [currentTestimonial, setCurrTest] = useState([])
+
+  useEffect(() => {
+    let tempTestimArr = []
+
+    for (let key in testimonials) tempTestimArr.push(key == 0 ? true : false)
+
+    setCurrTest(tempTestimArr)
+  }, [])
 
   let vidControls = isPlaying ? 'controls' : ''
   return (
@@ -246,7 +256,12 @@ export default function Home({ clients, partners, testimonials, titleSlider }) {
 
       <div className={styles.testimonials}>
         {testimonials.map((testimonial, key) => (
-          <div className={styles.testimonial} key={key}>
+          <div
+            className={`${
+              currentTestimonial[key] ? '' : styles.disabledTestimonial
+            } ${styles.testimonial}`}
+            key={key}
+          >
             <h6 className={styles.tesquotestart}> “</h6>
             <h6 className={styles.tesname}>
               {formatName(testimonial.clientName)} says,
